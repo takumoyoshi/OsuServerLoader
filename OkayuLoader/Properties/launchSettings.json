@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "OkayuLoader (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "OkayuLoader (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

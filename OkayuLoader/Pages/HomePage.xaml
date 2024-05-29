@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="OkayuLoader.Pages.HomePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OkayuLoader.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:controls="using:CommunityToolkit.WinUI.Controls"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:ui="using:CommunityToolkit.WinUI"
+    Margin="16,16,16,16">
+
+    <Grid>
+        <StackPanel Spacing="6">
+            <TextBlock x:Name="TitleName" Style="{StaticResource TitleTextBlockStyle}" Text="Okayu Loader" Margin="0,0,0,16"/>
+
+            <InfoBar
+                x:Name="InfoBarSecurity"
+                IsOpen="True"
+                Title="Patcher can't be used!"
+                Message="You are running osu! on the bancho server. If you run the patcher, it may restrict your account, so don't use it!" >
+            </InfoBar>
+
+            <controls:SettingsCard x:Name="Server"
+                       Description="Choose the server where you want to play!"
+                       Header="Server"
+                       HeaderIcon="{ui:FontIcon Glyph=&#xF081;}"
+                       IsEnabled="True">
+                <ComboBox SelectedIndex="0" x:Name="ComboBoxServerList" SelectionChanged="ComboBoxServerListHandler">
+                    <ComboBoxItem>Bancho</ComboBoxItem>
+                    <ComboBoxItem>Okayu</ComboBoxItem>
+                    <ComboBoxItem>Realistik</ComboBoxItem>
+                    <ComboBoxItem>Ascension</ComboBoxItem>
+                    <ComboBoxItem>Heia</ComboBoxItem>
+                    <ComboBoxItem>Lisek</ComboBoxItem>
+                    <ComboBoxItem>Ripple</ComboBoxItem>
+                    <ComboBoxItem>Gatari</ComboBoxItem>
+                    <ComboBoxItem>Halcyon</ComboBoxItem>
+                    <ComboBoxItem>EZ-PP farm</ComboBoxItem>
+                </ComboBox>
+            </controls:SettingsCard>
+
+            <controls:SettingsCard x:Name="SettingsCardPatcher"
+               Description="Show misses and pp table with rx mode."
+               Header="Enable patcher"
+               HeaderIcon="{ui:FontIcon Glyph=&#xE943;}"
+               IsEnabled="True">
+                <ToggleSwitch x:Name="ToggleSwitchPatcher" Toggled="ToggleSwitchPatcherHandler"/>
+            </controls:SettingsCard>
+        </StackPanel>
+
+        <Button 
+            Content="Run osu!" Style="{StaticResource AccentButtonStyle}"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Stretch"
+            x:Name="PlayOsuButton"
+            Click="ButtonPlayClickHandler"
+            IsEnabled="True"/>
+
+    </Grid>
+</Page>

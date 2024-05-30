@@ -8,20 +8,62 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     xmlns:ui="using:CommunityToolkit.WinUI"
-    xmlns:controls="using:CommunityToolkit.WinUI.Controls"
-    Margin="16,16,16,16">
+    xmlns:controls="using:CommunityToolkit.WinUI.Controls">
+    <ScrollView>
+        <Grid Margin="16,16,16,16">
+            <StackPanel Spacing="6">
+                <TextBlock x:Name="TitleName" Style="{StaticResource TitleTextBlockStyle}" Text="Settings" Margin="0,0,0,6"/>
 
-    <Grid>
-        <StackPanel Spacing="6">
-            <TextBlock x:Name="TitleName" Style="{StaticResource TitleTextBlockStyle}" Text="Settings" Margin="0,0,0,16"/>
+                <TextBlock Style="{StaticResource BodyStrongTextBlockStyle}" Text="Loader settings" Margin="0,0,0,6"/>
 
-            <controls:SettingsCard
-                Description="You can choose path to osu! folder if you choosed custom path for game"
-                Header="Osu! folder path"
-                HeaderIcon="{ui:FontIcon Glyph=&#xF081;}"
-                IsEnabled="True">
-                <TextBox x:Name="TextBoxPath" MinWidth="300" PlaceholderText="osu! folder path" SelectionChanged="TextBoxPathHandler"/>
-            </controls:SettingsCard>
-        </StackPanel>
-    </Grid>
+                <controls:SettingsCard
+            Description="You can choose path to osu! folder if you choosed custom path for game"
+            Header="Osu! folder path"
+            HeaderIcon="{ui:FontIcon Glyph=&#xF12B;}"
+            IsEnabled="True">
+                    <TextBox x:Name="TextBoxPath" MinWidth="300" PlaceholderText="osu! folder path" SelectionChanged="TextBoxPathHandler"/>
+                </controls:SettingsCard>
+
+                <TextBlock Style="{StaticResource BodyStrongTextBlockStyle}" Text="User config" Margin="0,2,0,6"/>
+
+                <controls:SettingsCard
+            Description="Show exit dialog when OkayuLoader finishes its work"
+            Header="Exit dialog"
+            HeaderIcon="{ui:FontIcon Glyph=&#xE7BA;}"
+            IsEnabled="True">
+                    <CheckBox Content="Show dialog on exit" x:Name="CheckBoxDialog" Click="CheckBoxDialogHandler" IsChecked="True"/>
+                </controls:SettingsCard>
+                <controls:SettingsCard
+            Description="Delete all saved data"
+            Header="Reset config"
+            HeaderIcon="{ui:FontIcon Glyph=&#xED62;}"
+            IsEnabled="True">
+                    <Button 
+            Content="Reset"
+            x:Name="ButtonResetConfig"
+            Click="ButtonResetConfigHandler"
+            IsEnabled="True"/>
+                </controls:SettingsCard>
+
+                <TextBlock Style="{StaticResource BodyStrongTextBlockStyle}" Text="About" Margin="0,2,0,6"/>
+                <controls:SettingsExpander Description="© 2024. All rights reserved."
+                       Header="Okayu Loader"
+                       HeaderIcon="{ui:BitmapIcon Source=ms-appx:///Assets/StoreLogo.png}">
+                    <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text="Version 0.2.0" />
+                    <controls:SettingsExpander.Items>
+                        <controls:SettingsCard HorizontalContentAlignment="Left" ContentAlignment="Left">
+                            <StackPanel Margin="-12,0,0,0" Orientation="Vertical">
+                                <HyperlinkButton Content="Github"  NavigateUri="https://github.com/takumoyoshi/OkayuLoader"/>
+                                <HyperlinkButton Content="Discord" NavigateUri="https://discord.gg/JWCCA67Vge" />
+                                <HyperlinkButton Content="Okayu" NavigateUri="https://osu.risunasa.pw" />
+                            </StackPanel>
+                        </controls:SettingsCard>
+                    </controls:SettingsExpander.Items>
+                </controls:SettingsExpander>
+
+                <HyperlinkButton Content="Send feedback" NavigateUri="https://t.me/klonerovsky" Margin="0,8,0,0"/>
+            </StackPanel>
+        </Grid>
+    </ScrollView>
+    
 </Page>

@@ -23,12 +23,16 @@ namespace OkayuLoader.Pages
             uiConfig = configService.ConfigLoad();
             ComboBoxServerList.SelectedIndex = uiConfig.serverIndex;
             ToggleSwitchPatcher.IsOn = uiConfig.isPatcherEnabled;
+            TextBoxCustomServer.Text = uiConfig.customServer;
+            ToggleSwitchCustomServer.IsOn = uiConfig.useCustomServer;
+            SettingsCardCustomServer.IsEnabled = uiConfig.useCustomServer;
 
             if (ComboBoxServerList.SelectedIndex == 0)
             {
                 SettingsCardPatcher.IsEnabled = false;
                 InfoBarSecurity.IsOpen = true;
-            } else
+            } 
+            else
             {
                 SettingsCardPatcher.IsEnabled = true;
                 InfoBarSecurity.IsOpen = false;
@@ -58,6 +62,24 @@ namespace OkayuLoader.Pages
             }
         }
 
+        private void ToggleSwitchCustomServerHandler(object sender, RoutedEventArgs e)
+        {
+            if (allInitializated)
+            {
+                if (ToggleSwitchCustomServer.IsOn == true)
+                {
+                    uiConfig.useCustomServer = true;
+                    SettingsCardCustomServer.IsEnabled = true;
+                }
+                if (ToggleSwitchCustomServer.IsOn == false) 
+                { 
+                    uiConfig.useCustomServer = false;
+                    SettingsCardCustomServer.IsEnabled = false;
+                }
+                configService.ConfigSave(uiConfig);
+            }
+        }
+
         private void ToggleSwitchPatcherHandler(object sender, RoutedEventArgs e)
         {
             if (allInitializated)
@@ -68,24 +90,44 @@ namespace OkayuLoader.Pages
             }
         }
 
+        private void TextBoxCustomServerHandler(object sender, RoutedEventArgs e)
+        {
+            if (allInitializated)
+            {
+                uiConfig.customServer = TextBoxCustomServer.Text;
+                configService.ConfigSave(uiConfig);
+            }
+        }
+
         private async void ButtonPlayClickHandler(object sender, RoutedEventArgs e)
         {
             PlayOsuButton.Content = "Starting osu!...";
             PlayOsuButton.IsEnabled = false;
             string osuFolderPath;
+            string devserverFlag;
+
             if (uiConfig.customPath != "")
             {
                 osuFolderPath = uiConfig.customPath;
-            } else
+            } 
+            else
             {
                 osuFolderPath = Environment.ExpandEnvironmentVariables("%localappdata%\\osu!");
+            }
+            if (uiConfig.customServer != "" & uiConfig.useCustomServer)
+            {
+                devserverFlag = "-devserver " + uiConfig.customServer;
+            } 
+            else
+            {
+                devserverFlag = GlobalVars.serverDevFlags[ComboBoxServerList.SelectedIndex];
             }
 
             await Task.Delay(1000);
 
             var osuProcessHandler = new Process();
             osuProcessHandler.StartInfo.FileName = osuFolderPath + "\\osu!.exe";
-            osuProcessHandler.StartInfo.Arguments = GlobalVars.serverDevFlags[ComboBoxServerList.SelectedIndex];
+            osuProcessHandler.StartInfo.Arguments = devserverFlag;
             osuProcessHandler.Start();
 
             if (ToggleSwitchPatcher.IsOn == true)

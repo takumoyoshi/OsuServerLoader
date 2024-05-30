@@ -13,7 +13,7 @@
 
     <Grid>
         <StackPanel Spacing="6">
-            <TextBlock x:Name="TitleName" Style="{StaticResource TitleTextBlockStyle}" Text="Okayu Loader" Margin="0,0,0,16"/>
+            <TextBlock x:Name="TitleName" Style="{StaticResource TitleTextBlockStyle}" Text="Okayu Loader" Margin="0,0,0,6"/>
 
             <InfoBar
                 x:Name="InfoBarSecurity"
@@ -22,11 +22,11 @@
                 Message="You are running osu! on the bancho server. If you run the patcher, it may restrict your account, so don't use it!" >
             </InfoBar>
 
-            <controls:SettingsCard x:Name="Server"
-                       Description="Choose the server where you want to play!"
-                       Header="Server"
-                       HeaderIcon="{ui:FontIcon Glyph=&#xF081;}"
-                       IsEnabled="True">
+            <controls:SettingsExpander x:Name="Server"
+                        Description="Choose the server where you want to play!"
+                        Header="Server"
+                        HeaderIcon="{ui:FontIcon Glyph=&#xEDA3;}"
+                        IsEnabled="True">
                 <ComboBox SelectedIndex="0" x:Name="ComboBoxServerList" SelectionChanged="ComboBoxServerListHandler">
                     <ComboBoxItem>Bancho</ComboBoxItem>
                     <ComboBoxItem>Okayu</ComboBoxItem>
@@ -39,7 +39,23 @@
                     <ComboBoxItem>Halcyon</ComboBoxItem>
                     <ComboBoxItem>EZ-PP farm</ComboBoxItem>
                 </ComboBox>
-            </controls:SettingsCard>
+                <controls:SettingsExpander.Items>
+                    <controls:SettingsCard
+                            Description="If you can't find your server in the list"
+                            Header="Use custom server"
+                            IsEnabled="True">
+                        <ToggleSwitch x:Name="ToggleSwitchCustomServer" Toggled="ToggleSwitchCustomServerHandler"/>
+                    </controls:SettingsCard>
+                    <controls:SettingsCard
+                            Description="Enter your own server where you want to play"
+                            Header="Custom server"
+                            IsEnabled="True"
+                            x:Name="SettingsCardCustomServer">
+                        <TextBox x:Name="TextBoxCustomServer" MinWidth="200" PlaceholderText="example.domain" SelectionChanged="TextBoxCustomServerHandler"/>
+                    </controls:SettingsCard>
+                </controls:SettingsExpander.Items>
+            </controls:SettingsExpander>
+            
 
             <controls:SettingsCard x:Name="SettingsCardPatcher"
                Description="Show misses and pp table with rx mode."

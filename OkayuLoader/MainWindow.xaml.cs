@@ -34,7 +34,7 @@ namespace OkayuLoader
             int width = GetDeviceCaps(screenDC, DESKTOPHORZRES);
             int height = GetDeviceCaps(screenDC, DESKTOPVERTRES);
 
-            AppWindow.Resize(new Windows.Graphics.SizeInt32 { Width = 1000, Height = 600 });
+            AppWindow.Resize(new Windows.Graphics.SizeInt32 { Width = 1000, Height = 550 });
             AppWindow.Move(new Windows.Graphics.PointInt32 { X = (width / 2 - 500), Y = (height / 2 - 300) });
         }
 

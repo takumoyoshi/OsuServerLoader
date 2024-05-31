@@ -9,12 +9,10 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     xmlns:ui="using:CommunityToolkit.WinUI"
-    Margin="16,16,16,16">
+    Margin="16,0,16,16">
 
     <Grid>
         <StackPanel Spacing="6">
-            <TextBlock x:Name="TitleName" Style="{StaticResource TitleTextBlockStyle}" Text="Okayu Loader" Margin="0,0,0,6"/>
-
             <InfoBar
                 x:Name="InfoBarSecurity"
                 IsOpen="True"
@@ -22,11 +20,11 @@
                 Message="You are running osu! on the bancho server. If you run the patcher, it may restrict your account, so don't use it!" >
             </InfoBar>
 
-            <controls:SettingsExpander x:Name="Server"
-                        Description="Choose the server where you want to play!"
-                        Header="Server"
-                        HeaderIcon="{ui:FontIcon Glyph=&#xEDA3;}"
-                        IsEnabled="True">
+            <controls:SettingsExpander x:Name="SettingsCardServer"
+                                       Description="Choose the server where you want to play!"
+                                       Header="Server"
+                                       HeaderIcon="{ui:FontIcon Glyph=&#xEDA3;}"
+                                       IsEnabled="True">
                 <ComboBox SelectedIndex="0" x:Name="ComboBoxServerList" SelectionChanged="ComboBoxServerListHandler">
                     <ComboBoxItem>Bancho</ComboBoxItem>
                     <ComboBoxItem>Okayu</ComboBoxItem>
@@ -40,17 +38,15 @@
                     <ComboBoxItem>EZ-PP farm</ComboBoxItem>
                 </ComboBox>
                 <controls:SettingsExpander.Items>
-                    <controls:SettingsCard
-                            Description="If you can't find your server in the list"
-                            Header="Use custom server"
-                            IsEnabled="True">
+                    <controls:SettingsCard Description="If you can't find your server in the list"
+                                           Header="Use custom server"
+                                           IsEnabled="True">
                         <ToggleSwitch x:Name="ToggleSwitchCustomServer" Toggled="ToggleSwitchCustomServerHandler"/>
                     </controls:SettingsCard>
-                    <controls:SettingsCard
-                            Description="Enter your own server where you want to play"
-                            Header="Custom server"
-                            IsEnabled="True"
-                            x:Name="SettingsCardCustomServer">
+                    <controls:SettingsCard Header="Custom server"
+                                           Description="Enter your own server where you want to play"
+                                           IsEnabled="True"
+                                           x:Name="SettingsCardCustomServer">
                         <TextBox x:Name="TextBoxCustomServer" MinWidth="200" PlaceholderText="example.domain" SelectionChanged="TextBoxCustomServerHandler"/>
                     </controls:SettingsCard>
                 </controls:SettingsExpander.Items>
@@ -58,21 +54,20 @@
             
 
             <controls:SettingsCard x:Name="SettingsCardPatcher"
-               Description="Show misses and pp table with rx mode."
-               Header="Enable patcher"
-               HeaderIcon="{ui:FontIcon Glyph=&#xE943;}"
-               IsEnabled="True">
+                                   Description="Show misses and pp table with rx mode."
+                                   Header="Enable patcher"
+                                   HeaderIcon="{ui:FontIcon Glyph=&#xE943;}"
+                                   IsEnabled="True">
                 <ToggleSwitch x:Name="ToggleSwitchPatcher" Toggled="ToggleSwitchPatcherHandler"/>
             </controls:SettingsCard>
         </StackPanel>
 
-        <Button 
-            Content="Run osu!" Style="{StaticResource AccentButtonStyle}"
-            VerticalAlignment="Bottom"
-            HorizontalAlignment="Stretch"
-            x:Name="PlayOsuButton"
-            Click="ButtonPlayClickHandler"
-            IsEnabled="True"/>
+        <Button Content="Run osu!" Style="{StaticResource AccentButtonStyle}"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Stretch"
+                x:Name="PlayOsuButton"
+                Click="ButtonPlayClickHandler"
+                IsEnabled="True"/>
 
     </Grid>
 </Page>

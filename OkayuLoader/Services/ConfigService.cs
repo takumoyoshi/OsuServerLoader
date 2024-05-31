@@ -13,12 +13,13 @@ namespace OkayuLoader.Services
         public bool isPatcherEnabled { get; set; }
         public bool showBuyMsgAgain { get; set; }
         public bool useCustomServer { get; set; }
+        public bool useCustomAccount { get; set; }
         public int configVersion { get; set; }
     }
 
     public class ConfigService
     {
-        const int reqVerisonConfig = 3;
+        const int reqVerisonConfig = 4;
 
         public void ConfigCreate()
         {
@@ -34,6 +35,7 @@ namespace OkayuLoader.Services
                 isPatcherEnabled = false,
                 showBuyMsgAgain = true,
                 useCustomServer = false,
+                useCustomAccount = true,
                 configVersion = reqVerisonConfig
             };
             string jsonConfig = JsonSerializer.Serialize<UiSettings>(uiSettings);

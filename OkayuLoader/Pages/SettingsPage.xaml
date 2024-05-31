@@ -10,12 +10,8 @@
     xmlns:ui="using:CommunityToolkit.WinUI"
     xmlns:controls="using:CommunityToolkit.WinUI.Controls">
     <ScrollView>
-        <Grid Margin="16,16,16,16">
+        <Grid Margin="16,0,16,16">
             <StackPanel Spacing="6">
-                <TextBlock x:Name="TitleName" Style="{StaticResource TitleTextBlockStyle}" Text="Settings" Margin="0,0,0,6"/>
-
-                <TextBlock Style="{StaticResource BodyStrongTextBlockStyle}" Text="Loader settings" Margin="0,0,0,6"/>
-
                 <controls:SettingsCard
             Description="You can choose path to osu! folder if you choosed custom path for game"
             Header="Osu! folder path"
@@ -55,7 +51,7 @@
                             <StackPanel Margin="-12,0,0,0" Orientation="Vertical">
                                 <HyperlinkButton Content="Github"  NavigateUri="https://github.com/takumoyoshi/OkayuLoader"/>
                                 <HyperlinkButton Content="Discord" NavigateUri="https://discord.gg/JWCCA67Vge" />
-                                <HyperlinkButton Content="Okayu" NavigateUri="https://osu.risunasa.pw" />
+                                <HyperlinkButton Content="Okayu" NavigateUri="https://osu.risunasa.xyz" />
                             </StackPanel>
                         </controls:SettingsCard>
                     </controls:SettingsExpander.Items>

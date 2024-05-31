@@ -40,7 +40,7 @@ namespace OkayuLoader
 
         private void NavigationViewInit(object sender, RoutedEventArgs args)
         {
-            nvMain.SelectedItem = nvMain.MenuItems[0];
+            NavigationView.SelectedItem = NavigationView.MenuItems[0];
             Type pageType = typeof(HomePage);
             _ = contentFrame.Navigate(pageType);
         }
@@ -56,17 +56,20 @@ namespace OkayuLoader
             Type pageType = typeof(HomePage);
 
             var selectedItem = (NavigationViewItem)args.SelectedItem;
-            if (selectedItem.Name == nv_home.Name)
+            if (selectedItem.Name == NvTabHome.Name)
             {
                 pageType = typeof(HomePage);
+                NavigationView.Header = "Okayu Loader";
             }
-            else if (selectedItem.Name == nv_accounts.Name)
+            else if (selectedItem.Name == NvTabAccounts.Name)
             {
                 pageType = typeof(AccountsPage);
+                NavigationView.Header = "Accounts";
             }
-            else if (selectedItem.Name == nv_settings.Name)
+            else if (selectedItem.Name == NvTabSettings.Name)
             {
                 pageType = typeof(SettingsPage);
+                NavigationView.Header = "Settings";
             }
 
             _ = contentFrame.Navigate(pageType);

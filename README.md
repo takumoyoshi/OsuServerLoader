@@ -20,3 +20,4 @@ Download the latest `.msix` installer from [Release page](https://github.com/tak
 - Thanks to
   * Cheu - motiavtion and suggestions
   * Cherry - bug fixes
+  * [This patcher](https://github.com/rushiiMachine/osu-patcher)

@@ -22,7 +22,9 @@ namespace OkayuLoader.Pages
         {
             this.InitializeComponent();
 
+            uiConfig = configService.Load();
             accounts = dataService.LoadAccounts();
+
             foreach (Account account in accounts)
             {
                 Classes.ComboBoxItem comboBoxItem = new Classes.ComboBoxItem();
@@ -30,8 +32,8 @@ namespace OkayuLoader.Pages
                 ComboBoxAccount.Items.Add(comboBoxItem);
             }
 
-            uiConfig = configService.Load();
             ComboBoxAccount.SelectedIndex = uiConfig.accountIndex;
+            uiConfig.selectedAccountTag = ComboBoxAccount.Items[uiConfig.accountIndex].ToString();
             ToggleSwitchAccount.IsOn = uiConfig.useCustomAccount;
             if (uiConfig.useCustomAccount)
             {
@@ -50,14 +52,13 @@ namespace OkayuLoader.Pages
             if (allInitializated)
             {
                 uiConfig.accountIndex = ComboBoxAccount.SelectedIndex;
+                uiConfig.selectedAccountTag = ComboBoxAccount.Items[uiConfig.accountIndex].ToString();
                 configService.Save(uiConfig);
             }  
         }
 
         private void ToggleSwitchCustomAccountHandler(object sender, RoutedEventArgs e)
         {
-            if (allInitializated)
-            {
                 if (ToggleSwitchAccount.IsOn == true)
                 {
                     uiConfig.useCustomAccount = true;
@@ -68,8 +69,17 @@ namespace OkayuLoader.Pages
                     uiConfig.useCustomAccount = false;
                     SettingsCardCustomAccount.IsEnabled = false;
                 }
-            }
             configService.Save(uiConfig);
+        }
+
+        private async void ButtonDeleteAccountHandler(object sender, RoutedEventArgs e)
+        {
+            dataService.DeleteRow(ComboBoxAccount.Items[uiConfig.accountIndex].ToString());
+
+            uiConfig.accountIndex = 0;
+            configService.Save(uiConfig);
+
+            this.Frame.Navigate(typeof(AccountsPage));
         }
 
         private async void ButtonAddAccountHandler(object sender, RoutedEventArgs e)
@@ -91,7 +101,7 @@ namespace OkayuLoader.Pages
                 Services.Account account = new Account();
                 account.id = uiConfig.accountId;
                 account.tag = uiConfig.customAccountTag;
-                account.nickname = uiConfig.customAccountName;
+                account.name = uiConfig.customAccountName;
                 account.password = uiConfig.customAccountPassword;
                 dataService.AddRow(account);
 

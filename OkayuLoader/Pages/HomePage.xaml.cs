@@ -4,9 +4,9 @@ using System;
 using System.Threading.Tasks;
 using System.Diagnostics;
 
-using Windows.Storage;
 
 using OkayuLoader.Services;
+using OkayuLoader.Tools;
 
 namespace OkayuLoader.Pages
 {
@@ -15,6 +15,7 @@ namespace OkayuLoader.Pages
         private bool allInitializated = false;
         ConfigService configService = new ConfigService();
         DataService dataService = new DataService();
+        FileEdit fileEditTool = new FileEdit();
 
         Services.UiSettings uiConfig;
 
@@ -108,6 +109,7 @@ namespace OkayuLoader.Pages
             string osuFolderPath;
             string documentsPath;
             string devserverFlag;
+            string username = Environment.UserName;
 
             if (uiConfig.customPath != "")
             {
@@ -126,6 +128,12 @@ namespace OkayuLoader.Pages
                 devserverFlag = GlobalVars.serverDevFlags[ComboBoxServerList.SelectedIndex];
             }
             documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            if (uiConfig.useCustomAccount)
+            {
+                Account account = dataService.GetAccount(uiConfig.selectedAccountTag);
+                fileEditTool.ChangeAccountForOsu((osuFolderPath + "\\osu!." + username + ".cfg"), account.name, account.password);
+            }
 
             await Task.Delay(1000);
 
@@ -158,7 +166,6 @@ namespace OkayuLoader.Pages
                 {
                     uiConfig.showBuyMsgAgain = false;
                     configService.Save(uiConfig);
-                    dataService.CreateDataFile();
                 }
             }
             

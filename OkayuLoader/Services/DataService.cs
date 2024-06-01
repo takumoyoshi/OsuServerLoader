@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Xml.Linq;
 using Microsoft.Data.Sqlite;
-using Microsoft.UI.Xaml.Controls;
 
 namespace OkayuLoader.Services
 {
@@ -13,7 +9,7 @@ namespace OkayuLoader.Services
     {
         public Int64 id { get; set; }
         public string tag { get; set; }
-        public string nickname { get; set; }
+        public string name { get; set; }
         public string password { get; set; }
     }
 
@@ -56,7 +52,7 @@ namespace OkayuLoader.Services
                 command.CommandText = "INSERT INTO accounts (id, tag, name, password) VALUES (@id, @tag, @name, @password);";
                 command.Parameters.AddWithValue("id", account.id);
                 command.Parameters.AddWithValue("tag", account.tag);
-                command.Parameters.AddWithValue("name", account.nickname);
+                command.Parameters.AddWithValue("name", account.name);
                 command.Parameters.AddWithValue("password", account.password);
                 command.ExecuteNonQuery();
             }
@@ -84,12 +80,12 @@ namespace OkayuLoader.Services
                         {
                             account.id = (Int64)reader.GetValue(0);
                             account.tag = (string)reader.GetValue(1);
-                            account.nickname = (string)reader.GetValue(2);
+                            account.name = (string)reader.GetValue(2);
                             account.password = reader.GetValue(3).ToString();
                             accounts.Add(new Account {
                                 id = account.id,
                                 tag = account.tag,
-                                nickname = account.nickname,
+                                name = account.name,
                                 password = account.password
                             });
                         }
@@ -99,6 +95,53 @@ namespace OkayuLoader.Services
             return accounts;
         }
 
+        public void DeleteRow(string tag)
+        {
+            string userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            string pathDataFile = System.IO.Path.Combine(userFolderPath, ".OkayuLoader\\AccountsBase.db");
 
+            using (var connection = new SqliteConnection("Data Source=" + pathDataFile))
+            {
+                connection.Open();
+
+                SqliteCommand command = new SqliteCommand();
+                command.Connection = connection;
+                command.CommandText = "DELETE FROM accounts WHERE tag = @tag";
+                command.Parameters.AddWithValue("tag", tag);
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public Account GetAccount(string tag)
+        {
+            string userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
+            string pathDataFile = System.IO.Path.Combine(userFolderPath, ".OkayuLoader\\AccountsBase.db");
+            Account account = new Account();
+
+            using (var connection = new SqliteConnection("Data Source=" + pathDataFile))
+            {
+                connection.Open();
+
+                SqliteCommand command = new SqliteCommand();
+                command.Connection = connection;
+                command.CommandText = "SELECT * FROM accounts WHERE tag = @tag LIMIT 1";
+                command.Parameters.AddWithValue("tag", tag);
+
+                using (SqliteDataReader reader = command.ExecuteReader())
+                {
+                    if (reader.HasRows)
+                    {
+                        while (reader.Read())
+                        {
+                            account.id = 0;
+                            account.tag = tag;
+                            account.name = reader.GetString(2);
+                            account.password = reader.GetString(3);
+                        }
+                    }
+                }
+            }
+            return account;
+        }
     }
 }

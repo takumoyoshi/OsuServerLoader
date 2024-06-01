@@ -12,6 +12,7 @@ namespace OkayuLoader.Services
         public int accountId { get; set; }
         public string customPath { get; set; }
         public string customServer { get; set; }
+        public string selectedAccountTag { get; set; }
         public string customAccountTag { get; set; }
         public string customAccountName { get; set; }
         public string customAccountPassword { get; set; }
@@ -24,7 +25,7 @@ namespace OkayuLoader.Services
 
     public class ConfigService
     {
-        const int reqVerisonConfig = 6;
+        const int reqVerisonConfig = 7;
         DataService dataService = new DataService();
 
         public void CreateConfigFile()
@@ -45,13 +46,14 @@ namespace OkayuLoader.Services
                 accountId = 0,
                 customPath = "",
                 customServer = "",
+                selectedAccountTag = "",
                 customAccountTag = "",
                 customAccountName = "",
                 customAccountPassword = "",
                 isPatcherEnabled = false,
                 showBuyMsgAgain = true,
                 useCustomServer = false,
-                useCustomAccount = true,
+                useCustomAccount = false,
                 configVersion = reqVerisonConfig
             };
             string jsonConfig = JsonSerializer.Serialize<UiSettings>(uiSettings);

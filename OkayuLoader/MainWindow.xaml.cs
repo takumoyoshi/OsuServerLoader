@@ -1,5 +1,4 @@
 using System;
-using System.Drawing;
 using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;

@@ -7,12 +7,17 @@ Simple tool to switch between osu! servers
 ![image](https://github.com/takumoyoshi/OkayuLoader/assets/83470621/ee4dac41-8d02-4f59-b6cc-eacb6da275e9)
 
 ## Download & usage
-Download the latest `.msix` installer from [Release page](https://github.com/takumoyoshi/OkayuLoader/releases) and then [trust OkayuLoader certificate](https://youtu.be/qMpVhnUN2g4). Download `Patcher.7z` and extract it in documents folder.
+Download the latest `.msix` installer from [Release page](https://github.com/takumoyoshi/OkayuLoader/releases) and then [trust OkayuLoader certificate](https://youtu.be/qMpVhnUN2g4). Download `Osu!Patcher.7z` and extract it in documents folder.
 
-## ToDo
-- Add:
-    * Account changing feature
-    * Switch to custom server
+## Features
+- Loader
+   * Choose server
+   * Choose custom server
+- Accounts
+   * Add your accounts
+   * Auto login in your account
+- Settings
+   * Enter your path to osu!
 
 ## Credits
 - Made by

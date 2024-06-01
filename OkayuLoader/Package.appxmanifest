@@ -10,7 +10,7 @@
   <Identity
     Name="8145a0ad-9063-4f6b-935a-7d8737c06171"
     Publisher="CN=klonerovsky"
-    Version="0.2.0.0" />
+    Version="0.2.1.0" />
 
   <mp:PhoneIdentity PhoneProductId="8145a0ad-9063-4f6b-935a-7d8737c06171" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 

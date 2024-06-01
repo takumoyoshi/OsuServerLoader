@@ -8,15 +8,38 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     xmlns:ui="using:CommunityToolkit.WinUI"
-    Margin="16,0,16,16"
     xmlns:controls="using:CommunityToolkit.WinUI.Controls">
 
-    <Grid>
+    <Grid Margin="24,6,24,16">
         <StackPanel Spacing="6">
-            <InfoBar Title="This page is not done!"
+            <InfoBar x:Name="kekkek"
                      IsOpen="True"
-                     Message="I am currently developing this page." >
-            </InfoBar>
+                     Title="This page is not done!"
+                     Message="I am currently developing this page." />
+            <controls:SettingsCard Header="Auto login" 
+                                   Description="Run osu! with logged in account"
+                                   HeaderIcon="{ui:FontIcon Glyph=&#xE72E;}">
+                <ToggleSwitch x:Name="ToggleSwitchAccount" Toggled="ToggleSwitchCustomAccountHandler" />
+            </controls:SettingsCard>
+            <controls:SettingsExpander Header="Account" 
+                                       Description="Choose your account"
+                                       HeaderIcon="{ui:FontIcon Glyph=&#xE748;}"
+                                       x:Name="SettingsCardCustomAccount">
+                <ComboBox x:Name="ComboBoxAccount" SelectedIndex="0" SelectionChanged="ComboBoxAccountListHandler"/>
+                <controls:SettingsExpander.Items>
+                    <controls:SettingsCard Header="Delete account" 
+                                           Description="Delete account from this list">
+                        <Button Content="Delete" />
+                    </controls:SettingsCard>
+                </controls:SettingsExpander.Items>
+            </controls:SettingsExpander>
         </StackPanel>
+
+        <Button Content="Add account"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Stretch"
+                x:Name="ButtonAddAccount"
+                IsEnabled="True"
+                Click="ButtonAddAccountHandler"/>
     </Grid>
 </Page>

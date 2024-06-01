@@ -11,6 +11,7 @@ using System.Runtime.InteropServices;
 
 namespace OkayuLoader
 {
+
     public sealed partial class MainWindow : Window
     {
 
@@ -22,6 +23,11 @@ namespace OkayuLoader
 
         public const int DESKTOPVERTRES = 117;
         public const int DESKTOPHORZRES = 118;
+
+        public void NaviagateTo(Type page)
+        {
+            _ = contentFrame.Navigate(page);
+        }
 
         public MainWindow()
         {

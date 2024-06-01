@@ -14,13 +14,15 @@ namespace OkayuLoader.Pages
     {
         private bool allInitializated = false;
         ConfigService configService = new ConfigService();
+        DataService dataService = new DataService();
+
         Services.UiSettings uiConfig;
 
         public HomePage()
         {            
             this.InitializeComponent();
 
-            uiConfig = configService.ConfigLoad();
+            uiConfig = configService.Load();
             ComboBoxServerList.SelectedIndex = uiConfig.serverIndex;
             ToggleSwitchPatcher.IsOn = uiConfig.isPatcherEnabled;
             TextBoxCustomServer.Text = uiConfig.customServer;
@@ -58,7 +60,7 @@ namespace OkayuLoader.Pages
             if (allInitializated)
             {
                 uiConfig.serverIndex = ComboBoxServerList.SelectedIndex;
-                configService.ConfigSave(uiConfig);
+                configService.Save(uiConfig);
             }
         }
 
@@ -76,7 +78,7 @@ namespace OkayuLoader.Pages
                     uiConfig.useCustomServer = false;
                     SettingsCardCustomServer.IsEnabled = false;
                 }
-                configService.ConfigSave(uiConfig);
+                configService.Save(uiConfig);
             }
         }
 
@@ -86,7 +88,7 @@ namespace OkayuLoader.Pages
             {
                 if (ToggleSwitchPatcher.IsOn == true) uiConfig.isPatcherEnabled = true;
                 if (ToggleSwitchPatcher.IsOn == false) uiConfig.isPatcherEnabled = false;
-                configService.ConfigSave(uiConfig);
+                configService.Save(uiConfig);
             }
         }
 
@@ -95,15 +97,16 @@ namespace OkayuLoader.Pages
             if (allInitializated)
             {
                 uiConfig.customServer = TextBoxCustomServer.Text;
-                configService.ConfigSave(uiConfig);
+                configService.Save(uiConfig);
             }
         }
 
         private async void ButtonPlayClickHandler(object sender, RoutedEventArgs e)
         {
-            PlayOsuButton.Content = "Starting osu!...";
-            PlayOsuButton.IsEnabled = false;
+            ButtonPlayOsu.Content = "Starting osu!...";
+            ButtonPlayOsu.IsEnabled = false;
             string osuFolderPath;
+            string documentsPath;
             string devserverFlag;
 
             if (uiConfig.customPath != "")
@@ -122,6 +125,7 @@ namespace OkayuLoader.Pages
             {
                 devserverFlag = GlobalVars.serverDevFlags[ComboBoxServerList.SelectedIndex];
             }
+            documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
             await Task.Delay(1000);
 
@@ -132,9 +136,9 @@ namespace OkayuLoader.Pages
 
             if (ToggleSwitchPatcher.IsOn == true)
             {
-                await Task.Delay(1000);
+                await Task.Delay(4000);
                 var patcherProcessHandler = new Process();
-                patcherProcessHandler.StartInfo.FileName = osuFolderPath + "\\Patcher\\osu!.patcher.exe";
+                patcherProcessHandler.StartInfo.FileName = documentsPath + "\\Osu!Patcher\\osu!.patcher.exe";
                 patcherProcessHandler.Start();
             }
 
@@ -153,7 +157,8 @@ namespace OkayuLoader.Pages
                 if (dialogResultButton == ContentDialogResult.Secondary)
                 {
                     uiConfig.showBuyMsgAgain = false;
-                    configService.ConfigSave(uiConfig);
+                    configService.Save(uiConfig);
+                    dataService.CreateDataFile();
                 }
             }
             

@@ -1,9 +1,8 @@
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-
-using OkayuLoader.Services;
 using System;
 using System.Threading.Tasks;
+using OkayuLoader.Services;
 
 namespace OkayuLoader.Pages
 {
@@ -17,7 +16,7 @@ namespace OkayuLoader.Pages
         {
             this.InitializeComponent();
 
-            uiConfig = configService.ConfigLoad();
+            uiConfig = configService.Load();
             TextBoxPath.Text = uiConfig.customPath;
             CheckBoxDialog.IsChecked = uiConfig.showBuyMsgAgain;
 
@@ -29,7 +28,7 @@ namespace OkayuLoader.Pages
             if (allInitializated)
             {
                 uiConfig.customPath = TextBoxPath.Text;
-                configService.ConfigSave(uiConfig);
+                configService.Save(uiConfig);
             }
         }
 
@@ -38,14 +37,14 @@ namespace OkayuLoader.Pages
             if (allInitializated)
             {
                 uiConfig.showBuyMsgAgain = (bool)CheckBoxDialog.IsChecked;
-                configService.ConfigSave(uiConfig);
+                configService.Save(uiConfig);
             }
         }
 
         private async void ButtonResetConfigHandler(object sender, RoutedEventArgs e)
         {
             uiConfig.configVersion = 0;
-            configService.ConfigSave(uiConfig);
+            configService.Save(uiConfig);
 
             ContentDialog dialog = new ContentDialog();
             dialog.XamlRoot = this.XamlRoot;

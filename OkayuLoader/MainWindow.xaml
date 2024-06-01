@@ -50,7 +50,7 @@
                 IsTitleBarAutoPaddingEnabled="False"
                 Grid.Row="1">
             <NavigationView.Resources>
-                <Thickness x:Key="NavigationViewHeaderMargin">16,16,16,8</Thickness>
+                <Thickness x:Key="NavigationViewHeaderMargin">24,20,24,12</Thickness>
             </NavigationView.Resources>
             <NavigationView.MenuItems>
                 <NavigationViewItem Icon="Home" Content="Home" x:Name="NvTabHome" />

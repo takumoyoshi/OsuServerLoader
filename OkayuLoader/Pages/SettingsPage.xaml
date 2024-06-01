@@ -10,41 +10,39 @@
     xmlns:ui="using:CommunityToolkit.WinUI"
     xmlns:controls="using:CommunityToolkit.WinUI.Controls">
     <ScrollView>
-        <Grid Margin="16,0,16,16">
+        <Grid Margin="24,6,24,16">
             <StackPanel Spacing="6">
-                <controls:SettingsCard
-            Description="You can choose path to osu! folder if you choosed custom path for game"
-            Header="Osu! folder path"
-            HeaderIcon="{ui:FontIcon Glyph=&#xF12B;}"
-            IsEnabled="True">
+                <TextBlock Style="{StaticResource BodyStrongTextBlockStyle}" Text="Osu config" Margin="0,0,0,6"/>
+                
+                <controls:SettingsCard Header="Osu! folder path"
+                                       Description="You can choose path to osu! folder if you choosed custom path for game"
+                                       HeaderIcon="{ui:FontIcon Glyph=&#xF12B;}"
+                                       IsEnabled="True">
                     <TextBox x:Name="TextBoxPath" MinWidth="300" PlaceholderText="osu! folder path" SelectionChanged="TextBoxPathHandler"/>
                 </controls:SettingsCard>
 
                 <TextBlock Style="{StaticResource BodyStrongTextBlockStyle}" Text="User config" Margin="0,2,0,6"/>
 
-                <controls:SettingsCard
-            Description="Show exit dialog when OkayuLoader finishes its work"
-            Header="Exit dialog"
-            HeaderIcon="{ui:FontIcon Glyph=&#xE7BA;}"
-            IsEnabled="True">
+                <controls:SettingsCard Header="Exit dialog"
+                                       Description="Show exit dialog when OkayuLoader finishes its work"
+                                       HeaderIcon="{ui:FontIcon Glyph=&#xE7BA;}"
+                                       IsEnabled="True">
                     <CheckBox Content="Show dialog on exit" x:Name="CheckBoxDialog" Click="CheckBoxDialogHandler" IsChecked="True"/>
                 </controls:SettingsCard>
-                <controls:SettingsCard
-            Description="Delete all saved data"
-            Header="Reset config"
-            HeaderIcon="{ui:FontIcon Glyph=&#xED62;}"
-            IsEnabled="True">
-                    <Button 
-            Content="Reset"
-            x:Name="ButtonResetConfig"
-            Click="ButtonResetConfigHandler"
-            IsEnabled="True"/>
+                <controls:SettingsCard Header="Reset config"
+                                       Description="Delete all saved data"
+                                       HeaderIcon="{ui:FontIcon Glyph=&#xED62;}"
+                                       IsEnabled="True">
+                    <Button x:Name="ButtonResetConfig"
+                            Content="Reset"
+                            Click="ButtonResetConfigHandler"
+                            IsEnabled="True"/>
                 </controls:SettingsCard>
 
                 <TextBlock Style="{StaticResource BodyStrongTextBlockStyle}" Text="About" Margin="0,2,0,6"/>
-                <controls:SettingsExpander Description="© 2024. All rights reserved."
-                       Header="Okayu Loader"
-                       HeaderIcon="{ui:BitmapIcon Source=ms-appx:///Assets/StoreLogo.png}">
+                <controls:SettingsExpander Header="Okayu Loader" 
+                                           Description="© Artem Klonerovsky. GPL-3.0 license."
+                                           HeaderIcon="{ui:BitmapIcon Source=ms-appx:///Assets/StoreLogo.png}">
                     <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text="Version 0.2.0" />
                     <controls:SettingsExpander.Items>
                         <controls:SettingsCard HorizontalContentAlignment="Left" ContentAlignment="Left">

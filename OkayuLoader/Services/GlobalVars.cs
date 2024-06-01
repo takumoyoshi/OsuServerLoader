@@ -31,7 +31,8 @@ namespace OkayuLoader.Services
             "-devserver ripple.moe",
             "-devserver gatari.pw",
             "-devserver halcyon.moe",
-            "-devserver ez-pp.farm"
+            "-devserver ez-pp.farm",
+            "-devserver akatsuki.pw"
         };
     }
 }

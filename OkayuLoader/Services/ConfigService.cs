@@ -1,15 +1,20 @@
-﻿using Microsoft.UI.Xaml.Shapes;
-using System;
+﻿using System;
 using System.IO;
 using System.Text.Json;
 
 namespace OkayuLoader.Services
 {
+
     public class UiSettings
     {
         public int serverIndex { get; set; }
+        public int accountIndex { get; set; }
+        public int accountId { get; set; }
         public string customPath { get; set; }
         public string customServer { get; set; }
+        public string customAccountTag { get; set; }
+        public string customAccountName { get; set; }
+        public string customAccountPassword { get; set; }
         public bool isPatcherEnabled { get; set; }
         public bool showBuyMsgAgain { get; set; }
         public bool useCustomServer { get; set; }
@@ -19,19 +24,30 @@ namespace OkayuLoader.Services
 
     public class ConfigService
     {
-        const int reqVerisonConfig = 4;
+        const int reqVerisonConfig = 6;
+        DataService dataService = new DataService();
 
-        public void ConfigCreate()
+        public void CreateConfigFile()
         {
             string userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
             string pathConfigFolder = System.IO.Path.Combine(userFolderPath, ".OkayuLoader");
             string pathConfigFile = System.IO.Path.Combine(userFolderPath, ".OkayuLoader\\UiSettings.cfg");
 
+            if (Directory.Exists(pathConfigFolder))
+            {
+                Directory.Delete(pathConfigFolder, true);
+            }
+
             var uiSettings = new UiSettings
             {
                 serverIndex = 0,
+                accountIndex = 0,
+                accountId = 0,
                 customPath = "",
                 customServer = "",
+                customAccountTag = "",
+                customAccountName = "",
+                customAccountPassword = "",
                 isPatcherEnabled = false,
                 showBuyMsgAgain = true,
                 useCustomServer = false,
@@ -42,9 +58,10 @@ namespace OkayuLoader.Services
 
             Directory.CreateDirectory(pathConfigFolder);
             File.WriteAllText(pathConfigFile, jsonConfig);
+            dataService.CreateDataFile();
         }
 
-        public UiSettings ConfigLoad() 
+        public UiSettings Load() 
         {
             string userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
             string pathConfigFile = System.IO.Path.Combine(userFolderPath, ".OkayuLoader\\UiSettings.cfg");
@@ -52,19 +69,19 @@ namespace OkayuLoader.Services
             bool fileExists = File.Exists(pathConfigFile);
             if (fileExists == false)
             {
-                ConfigCreate();
+                CreateConfigFile();
             }
 
             var config = JsonSerializer.Deserialize<UiSettings>(File.ReadAllText(pathConfigFile));
             if (config.configVersion < reqVerisonConfig)
             {
-                ConfigCreate();
+                CreateConfigFile();
                 return JsonSerializer.Deserialize<UiSettings>(File.ReadAllText(pathConfigFile));
             }
             return config;
         }
 
-        public void ConfigSave(UiSettings currentSettings)
+        public void Save(UiSettings currentSettings)
         {
             string userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
             string pathConfigFile = System.IO.Path.Combine(userFolderPath, ".OkayuLoader\\UiSettings.cfg");

@@ -32,9 +32,13 @@ namespace OkayuLoader.Pages
                 ComboBoxAccount.Items.Add(comboBoxItem);
             }
 
-            ComboBoxAccount.SelectedIndex = uiConfig.accountIndex;
-            uiConfig.selectedAccountTag = ComboBoxAccount.Items[uiConfig.accountIndex].ToString();
             ToggleSwitchAccount.IsOn = uiConfig.useCustomAccount;
+            ComboBoxAccount.SelectedIndex = uiConfig.accountIndex;
+            if (accounts.Count > 0)
+            {
+                uiConfig.selectedAccountTag = ComboBoxAccount.Items[uiConfig.accountIndex].ToString();
+            }
+                
             if (uiConfig.useCustomAccount)
             {
                 SettingsCardCustomAccount.IsEnabled = true;

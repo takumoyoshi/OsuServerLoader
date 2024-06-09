@@ -1,0 +1,1 @@
+C:\Users\klonerovsky\VS projects\OkayuLoader\OkayuLoader\OkayuLoader.csproj;x64

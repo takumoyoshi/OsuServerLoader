@@ -1,4 +1,4 @@
-# Okayu loader
+# Osu server loader
 Simple tool to switch between osu! servers
 
 ![Platform](https://img.shields.io/badge/Windows_10+-0078D6?style=for-the-badge&logo=windows&logoColor=white)

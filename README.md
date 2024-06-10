@@ -4,10 +4,10 @@ Simple tool to switch between osu! servers
 ![Platform](https://img.shields.io/badge/Windows_10+-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 ![Framework](https://img.shields.io/badge/WinUi3-444444?style=for-the-badge&logo=windowsterminal&logoColor=white)
 
-![image](https://github.com/takumoyoshi/OkayuLoader/assets/83470621/ee4dac41-8d02-4f59-b6cc-eacb6da275e9)
+![image](https://github.com/takumoyoshi/OsuServerLoader/assets/83470621/1e86ddf6-d4dc-4bf8-84e7-f3e8a676c66f)
 
 ## Download & usage
-Download the latest `.msix` installer from [Release page](https://github.com/takumoyoshi/OkayuLoader/releases) and then [trust OkayuLoader certificate](https://youtu.be/qMpVhnUN2g4). Download `Osu!Patcher.7z` and extract it in documents folder.
+Download the latest `.msix` installer from [Release page](https://github.com/takumoyoshi/OkayuLoader/releases) and then [trust OkayuLoader certificate](https://www.youtube.com/watch?v=etV08YhYiMk). Download `Osu!Patcher.7z` and extract it in documents folder.
 
 ## Features
 - Loader

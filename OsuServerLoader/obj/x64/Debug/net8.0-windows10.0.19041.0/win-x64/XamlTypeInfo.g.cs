@@ -13,17 +13,17 @@ namespace OkayuLoader
     public partial class App : global::Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
     {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.UI.Xaml.Markup.Compiler"," 3.0.0.2404")]
-        private global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMetaDataProvider __appProvider;
+        private global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMetaDataProvider __appProvider;
 
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.UI.Xaml.Markup.Compiler"," 3.0.0.2404")]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        private global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMetaDataProvider _AppProvider
+        private global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMetaDataProvider _AppProvider
         {
             get
             {
                 if (__appProvider == null)
                 {
-                    __appProvider = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMetaDataProvider();
+                    __appProvider = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMetaDataProvider();
                 }
                 return __appProvider;
             }
@@ -61,7 +61,7 @@ namespace OkayuLoader
     }
 }
 
-namespace OkayuLoader.OkayuLoader_XamlTypeInfo
+namespace OsuServerLoader.OsuServerLoader_XamlTypeInfo
 {
     /// <summary>
     /// Main class for providing metadata for the app or library
@@ -70,15 +70,15 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     public sealed class XamlMetaDataProvider : global::Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
     {
-        private global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlTypeInfoProvider _provider = null;
+        private global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlTypeInfoProvider _provider = null;
 
-        private global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlTypeInfoProvider Provider
+        private global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlTypeInfoProvider Provider
         {
             get
             {
                 if (_provider == null)
                 {
-                    _provider = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlTypeInfoProvider();
+                    _provider = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlTypeInfoProvider();
                 }
                 return _provider;
             }
@@ -128,7 +128,7 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
                 {
                     xamlType = CreateXamlType(typeIndex);
                 }
-                var userXamlType = xamlType as global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType;
+                var userXamlType = xamlType as global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType;
                 if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
                 {
                     global::Microsoft.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForType(type);
@@ -167,7 +167,7 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
                 {
                     xamlType = CreateXamlType(typeIndex);
                 }
-                var userXamlType = xamlType as global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType;
+                var userXamlType = xamlType as global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType;
                 if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
                 {
                     global::Microsoft.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForName(typeName);
@@ -224,7 +224,7 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[53];
+            _typeNameTable = new string[78];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
@@ -253,33 +253,58 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
             _typeNameTable[25] = "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled";
             _typeNameTable[26] = "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings";
             _typeNameTable[27] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[28] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
-            _typeNameTable[29] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
-            _typeNameTable[30] = "Microsoft.UI.Xaml.Controls.IconElement";
-            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.InfoBadge";
-            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.Control";
-            _typeNameTable[33] = "OkayuLoader.MainWindow";
-            _typeNameTable[34] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[35] = "OkayuLoader.Pages.AccountsPage";
-            _typeNameTable[36] = "Microsoft.UI.Xaml.Controls.Page";
-            _typeNameTable[37] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[38] = "CommunityToolkit.WinUI.Controls.SettingsCard";
-            _typeNameTable[39] = "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase";
-            _typeNameTable[40] = "CommunityToolkit.WinUI.Controls.ContentAlignment";
-            _typeNameTable[41] = "CommunityToolkit.WinUI.FontIconExtension";
-            _typeNameTable[42] = "CommunityToolkit.WinUI.TextIconExtension";
-            _typeNameTable[43] = "Microsoft.UI.Xaml.Markup.MarkupExtension";
-            _typeNameTable[44] = "Microsoft.UI.Xaml.Media.FontFamily";
-            _typeNameTable[45] = "Windows.UI.Text.FontWeight";
-            _typeNameTable[46] = "Windows.UI.Text.FontStyle";
-            _typeNameTable[47] = "Microsoft.UI.Xaml.Media.Brush";
-            _typeNameTable[48] = "OkayuLoader.Pages.HomePage";
-            _typeNameTable[49] = "OkayuLoader.Pages.SettingsPage";
-            _typeNameTable[50] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[51] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[52] = "Int32";
+            _typeNameTable[28] = "Microsoft.UI.Xaml.Thickness";
+            _typeNameTable[29] = "Microsoft.UI.Xaml.Controls.NavigationViewItem";
+            _typeNameTable[30] = "Microsoft.UI.Xaml.Controls.NavigationViewItemBase";
+            _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.IconElement";
+            _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.InfoBadge";
+            _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[34] = "OkayuLoader.MainWindow";
+            _typeNameTable[35] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[36] = "OkayuLoader.Pages.AccountsDialogContent";
+            _typeNameTable[37] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[38] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[39] = "Microsoft.UI.Xaml.Controls.InfoBar";
+            _typeNameTable[40] = "Microsoft.UI.Xaml.Controls.InfoBarSeverity";
+            _typeNameTable[41] = "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase";
+            _typeNameTable[42] = "System.Windows.Input.ICommand";
+            _typeNameTable[43] = "Microsoft.UI.Xaml.Controls.IconSource";
+            _typeNameTable[44] = "Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings";
+            _typeNameTable[45] = "CommunityToolkit.WinUI.Controls.SettingsCard";
+            _typeNameTable[46] = "CommunityToolkit.WinUI.Controls.ContentAlignment";
+            _typeNameTable[47] = "CommunityToolkit.WinUI.Controls.SettingsExpander";
+            _typeNameTable[48] = "CommunityToolkit.WinUI.FontIconExtension";
+            _typeNameTable[49] = "CommunityToolkit.WinUI.TextIconExtension";
+            _typeNameTable[50] = "Microsoft.UI.Xaml.Markup.MarkupExtension";
+            _typeNameTable[51] = "Microsoft.UI.Xaml.Media.FontFamily";
+            _typeNameTable[52] = "Windows.UI.Text.FontWeight";
+            _typeNameTable[53] = "Windows.UI.Text.FontStyle";
+            _typeNameTable[54] = "Microsoft.UI.Xaml.Media.Brush";
+            _typeNameTable[55] = "OkayuLoader.Pages.AccountsPage";
+            _typeNameTable[56] = "OkayuLoader.Pages.HomePage";
+            _typeNameTable[57] = "Microsoft.UI.Xaml.Controls.ScrollView";
+            _typeNameTable[58] = "Microsoft.UI.Xaml.Visibility";
+            _typeNameTable[59] = "Microsoft.UI.Xaml.Controls.ScrollingScrollMode";
+            _typeNameTable[60] = "Microsoft.UI.Xaml.Controls.ScrollingContentOrientation";
+            _typeNameTable[61] = "Microsoft.UI.Composition.CompositionPropertySet";
+            _typeNameTable[62] = "Microsoft.UI.Composition.CompositionObject";
+            _typeNameTable[63] = "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility";
+            _typeNameTable[64] = "Microsoft.UI.Xaml.Controls.ScrollingChainMode";
+            _typeNameTable[65] = "Microsoft.UI.Xaml.Controls.ScrollingRailMode";
+            _typeNameTable[66] = "Microsoft.UI.Xaml.Controls.ScrollingInputKinds";
+            _typeNameTable[67] = "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter";
+            _typeNameTable[68] = "Microsoft.UI.Xaml.FrameworkElement";
+            _typeNameTable[69] = "Microsoft.UI.Xaml.Controls.ScrollingInteractionState";
+            _typeNameTable[70] = "Single";
+            _typeNameTable[71] = "Microsoft.UI.Xaml.Controls.ScrollingZoomMode";
+            _typeNameTable[72] = "CommunityToolkit.WinUI.BitmapIconExtension";
+            _typeNameTable[73] = "System.Uri";
+            _typeNameTable[74] = "OkayuLoader.Pages.SettingsPage";
+            _typeNameTable[75] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[76] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[77] = "Int32";
 
-            _typeTable = new global::System.Type[53];
+            _typeTable = new global::System.Type[78];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
@@ -308,31 +333,56 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
             _typeTable[25] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled);
             _typeTable[26] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings);
             _typeTable[27] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
-            _typeTable[29] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
-            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
-            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
-            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
-            _typeTable[33] = typeof(global::OkayuLoader.MainWindow);
-            _typeTable[34] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[35] = typeof(global::OkayuLoader.Pages.AccountsPage);
-            _typeTable[36] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
-            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[38] = typeof(global::CommunityToolkit.WinUI.Controls.SettingsCard);
-            _typeTable[39] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase);
-            _typeTable[40] = typeof(global::CommunityToolkit.WinUI.Controls.ContentAlignment);
-            _typeTable[41] = typeof(global::CommunityToolkit.WinUI.FontIconExtension);
-            _typeTable[42] = typeof(global::CommunityToolkit.WinUI.TextIconExtension);
-            _typeTable[43] = typeof(global::Microsoft.UI.Xaml.Markup.MarkupExtension);
-            _typeTable[44] = typeof(global::Microsoft.UI.Xaml.Media.FontFamily);
-            _typeTable[45] = typeof(global::Windows.UI.Text.FontWeight);
-            _typeTable[46] = typeof(global::Windows.UI.Text.FontStyle);
-            _typeTable[47] = typeof(global::Microsoft.UI.Xaml.Media.Brush);
-            _typeTable[48] = typeof(global::OkayuLoader.Pages.HomePage);
-            _typeTable[49] = typeof(global::OkayuLoader.Pages.SettingsPage);
-            _typeTable[50] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[51] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[52] = typeof(global::System.Int32);
+            _typeTable[28] = typeof(global::Microsoft.UI.Xaml.Thickness);
+            _typeTable[29] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItem);
+            _typeTable[30] = typeof(global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase);
+            _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
+            _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
+            _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[34] = typeof(global::OkayuLoader.MainWindow);
+            _typeTable[35] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[36] = typeof(global::OkayuLoader.Pages.AccountsDialogContent);
+            _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[38] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[39] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBar);
+            _typeTable[40] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarSeverity);
+            _typeTable[41] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase);
+            _typeTable[42] = typeof(global::System.Windows.Input.ICommand);
+            _typeTable[43] = typeof(global::Microsoft.UI.Xaml.Controls.IconSource);
+            _typeTable[44] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings);
+            _typeTable[45] = typeof(global::CommunityToolkit.WinUI.Controls.SettingsCard);
+            _typeTable[46] = typeof(global::CommunityToolkit.WinUI.Controls.ContentAlignment);
+            _typeTable[47] = typeof(global::CommunityToolkit.WinUI.Controls.SettingsExpander);
+            _typeTable[48] = typeof(global::CommunityToolkit.WinUI.FontIconExtension);
+            _typeTable[49] = typeof(global::CommunityToolkit.WinUI.TextIconExtension);
+            _typeTable[50] = typeof(global::Microsoft.UI.Xaml.Markup.MarkupExtension);
+            _typeTable[51] = typeof(global::Microsoft.UI.Xaml.Media.FontFamily);
+            _typeTable[52] = typeof(global::Windows.UI.Text.FontWeight);
+            _typeTable[53] = typeof(global::Windows.UI.Text.FontStyle);
+            _typeTable[54] = typeof(global::Microsoft.UI.Xaml.Media.Brush);
+            _typeTable[55] = typeof(global::OkayuLoader.Pages.AccountsPage);
+            _typeTable[56] = typeof(global::OkayuLoader.Pages.HomePage);
+            _typeTable[57] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollView);
+            _typeTable[58] = typeof(global::Microsoft.UI.Xaml.Visibility);
+            _typeTable[59] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode);
+            _typeTable[60] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation);
+            _typeTable[61] = typeof(global::Microsoft.UI.Composition.CompositionPropertySet);
+            _typeTable[62] = typeof(global::Microsoft.UI.Composition.CompositionObject);
+            _typeTable[63] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility);
+            _typeTable[64] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingChainMode);
+            _typeTable[65] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingRailMode);
+            _typeTable[66] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds);
+            _typeTable[67] = typeof(global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter);
+            _typeTable[68] = typeof(global::Microsoft.UI.Xaml.FrameworkElement);
+            _typeTable[69] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState);
+            _typeTable[70] = typeof(global::System.Single);
+            _typeTable[71] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode);
+            _typeTable[72] = typeof(global::CommunityToolkit.WinUI.BitmapIconExtension);
+            _typeTable[73] = typeof(global::System.Uri);
+            _typeTable[74] = typeof(global::OkayuLoader.Pages.SettingsPage);
+            _typeTable[75] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[76] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[77] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -371,15 +421,22 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
         private object Activate_4_MicaBackdrop() { return new global::Microsoft.UI.Xaml.Media.MicaBackdrop(); }
         private object Activate_9_NavigationView() { return new global::Microsoft.UI.Xaml.Controls.NavigationView(); }
         private object Activate_26_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
-        private object Activate_28_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
-        private object Activate_31_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
-        private object Activate_33_MainWindow() { return new global::OkayuLoader.MainWindow(); }
-        private object Activate_35_AccountsPage() { return new global::OkayuLoader.Pages.AccountsPage(); }
-        private object Activate_38_SettingsCard() { return new global::CommunityToolkit.WinUI.Controls.SettingsCard(); }
-        private object Activate_41_FontIconExtension() { return new global::CommunityToolkit.WinUI.FontIconExtension(); }
-        private object Activate_48_HomePage() { return new global::OkayuLoader.Pages.HomePage(); }
-        private object Activate_49_SettingsPage() { return new global::OkayuLoader.Pages.SettingsPage(); }
-        private object Activate_50_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_29_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
+        private object Activate_32_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
+        private object Activate_34_MainWindow() { return new global::OkayuLoader.MainWindow(); }
+        private object Activate_36_AccountsDialogContent() { return new global::OkayuLoader.Pages.AccountsDialogContent(); }
+        private object Activate_39_InfoBar() { return new global::Microsoft.UI.Xaml.Controls.InfoBar(); }
+        private object Activate_44_InfoBarTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings(); }
+        private object Activate_45_SettingsCard() { return new global::CommunityToolkit.WinUI.Controls.SettingsCard(); }
+        private object Activate_47_SettingsExpander() { return new global::CommunityToolkit.WinUI.Controls.SettingsExpander(); }
+        private object Activate_48_FontIconExtension() { return new global::CommunityToolkit.WinUI.FontIconExtension(); }
+        private object Activate_55_AccountsPage() { return new global::OkayuLoader.Pages.AccountsPage(); }
+        private object Activate_56_HomePage() { return new global::OkayuLoader.Pages.HomePage(); }
+        private object Activate_57_ScrollView() { return new global::Microsoft.UI.Xaml.Controls.ScrollView(); }
+        private object Activate_67_ScrollPresenter() { return new global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter(); }
+        private object Activate_72_BitmapIconExtension() { return new global::CommunityToolkit.WinUI.BitmapIconExtension(); }
+        private object Activate_74_SettingsPage() { return new global::OkayuLoader.Pages.SettingsPage(); }
+        private object Activate_75_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -393,7 +450,7 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_51_IList(object instance, object item)
+        private void VectorAdd_76_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -402,8 +459,8 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
 
         private global::Microsoft.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
-            global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType xamlType = null;
-            global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType userType;
+            global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType xamlType = null;
+            global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType userType;
             string typeName = _typeNameTable[typeIndex];
             global::System.Type type = _typeTable[typeIndex];
 
@@ -411,7 +468,7 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
             {
 
             case 0:   //  Microsoft.UI.Xaml.Controls.XamlControlsResources
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.ResourceDictionary"));
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.ResourceDictionary"));
                 userType.Activator = Activate_0_XamlControlsResources;
                 userType.DictionaryAdd = MapAdd_0_XamlControlsResources;
                 userType.AddMemberName("UseCompactResources");
@@ -419,54 +476,55 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
                 break;
 
             case 1:   //  Microsoft.UI.Xaml.ResourceDictionary
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 2:   //  Object
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 3:   //  Boolean
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 4:   //  Microsoft.UI.Xaml.Media.MicaBackdrop
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Media.SystemBackdrop"));
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Media.SystemBackdrop"));
                 userType.Activator = Activate_4_MicaBackdrop;
                 userType.AddMemberName("Kind");
                 xamlType = userType;
                 break;
 
             case 5:   //  Microsoft.UI.Xaml.Media.SystemBackdrop
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 6:   //  Microsoft.UI.Composition.SystemBackdrops.MicaKind
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Base", global::Microsoft.UI.Composition.SystemBackdrops.MicaKind.Base);
                 userType.AddEnumValue("BaseAlt", global::Microsoft.UI.Composition.SystemBackdrops.MicaKind.BaseAlt);
                 xamlType = userType;
                 break;
 
             case 7:   //  System.Enum
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 xamlType = userType;
                 break;
 
             case 8:   //  System.ValueType
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 xamlType = userType;
                 break;
 
             case 9:   //  Microsoft.UI.Xaml.Controls.NavigationView
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
                 userType.Activator = Activate_9_NavigationView;
-                userType.AddMemberName("Header");
                 userType.AddMemberName("PaneTitle");
                 userType.AddMemberName("IsBackButtonVisible");
                 userType.AddMemberName("IsBackEnabled");
                 userType.AddMemberName("IsSettingsVisible");
                 userType.AddMemberName("SelectionFollowsFocus");
+                userType.AddMemberName("Header");
+                userType.AddMemberName("IsTitleBarAutoPaddingEnabled");
                 userType.AddMemberName("MenuItems");
                 userType.AddMemberName("FooterMenuItems");
                 userType.AddMemberName("AlwaysShowHeader");
@@ -481,7 +539,6 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
                 userType.AddMemberName("IsPaneOpen");
                 userType.AddMemberName("IsPaneToggleButtonVisible");
                 userType.AddMemberName("IsPaneVisible");
-                userType.AddMemberName("IsTitleBarAutoPaddingEnabled");
                 userType.AddMemberName("MenuItemContainerStyle");
                 userType.AddMemberName("MenuItemContainerStyleSelector");
                 userType.AddMemberName("MenuItemTemplate");
@@ -502,15 +559,15 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
                 break;
 
             case 10:   //  Microsoft.UI.Xaml.Controls.ContentControl
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 11:   //  String
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 12:   //  Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Collapsed", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Collapsed);
                 userType.AddEnumValue("Visible", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Visible);
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible.Auto);
@@ -518,33 +575,33 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
                 break;
 
             case 13:   //  Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Disabled);
                 userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus.Enabled);
                 xamlType = userType;
                 break;
 
             case 14:   //  System.Collections.Generic.IList`1<Object>
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, null);
                 userType.CollectionAdd = VectorAdd_14_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
             case 15:   //  Microsoft.UI.Xaml.Controls.AutoSuggestBox
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 16:   //  Double
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 17:   //  Microsoft.UI.Xaml.UIElement
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 18:   //  Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Minimal", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Minimal);
                 userType.AddEnumValue("Compact", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Compact);
                 userType.AddEnumValue("Expanded", global::Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode.Expanded);
@@ -552,30 +609,30 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
                 break;
 
             case 19:   //  Microsoft.UI.Xaml.DataTemplate
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 20:   //  Microsoft.UI.Xaml.Style
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 21:   //  Microsoft.UI.Xaml.Controls.StyleSelector
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 22:   //  Microsoft.UI.Xaml.Controls.DataTemplateSelector
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
             case 23:   //  Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("MoreLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.MoreLabel);
                 userType.AddEnumValue("NoLabel", global::Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode.NoLabel);
                 xamlType = userType;
                 break;
 
             case 24:   //  Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Auto);
                 userType.AddEnumValue("Left", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Left);
                 userType.AddEnumValue("Top", global::Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode.Top);
@@ -585,7 +642,7 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
                 break;
 
             case 25:   //  Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("WhenSelectionFollowsFocus", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.WhenSelectionFollowsFocus);
                 userType.AddEnumValue("Always", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.Always);
                 userType.AddEnumValue("Never", global::Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled.Never);
@@ -593,18 +650,27 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
                 break;
 
             case 26:   //  Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
             case 27:   //  Microsoft.UI.Xaml.DependencyObject
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 28:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase"));
-                userType.Activator = Activate_28_NavigationViewItem;
+            case 28:   //  Microsoft.UI.Xaml.Thickness
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+                userType.AddMemberName("Left");
+                userType.AddMemberName("Top");
+                userType.AddMemberName("Right");
+                userType.AddMemberName("Bottom");
+                xamlType = userType;
+                break;
+
+            case 29:   //  Microsoft.UI.Xaml.Controls.NavigationViewItem
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase"));
+                userType.Activator = Activate_29_NavigationViewItem;
                 userType.AddMemberName("Icon");
                 userType.AddMemberName("CompactPaneLength");
                 userType.AddMemberName("HasUnrealizedChildren");
@@ -617,57 +683,107 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 29:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
+            case 30:   //  Microsoft.UI.Xaml.Controls.NavigationViewItemBase
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ContentControl"));
                 userType.AddMemberName("IsSelected");
                 xamlType = userType;
                 break;
 
-            case 30:   //  Microsoft.UI.Xaml.Controls.IconElement
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 31:   //  Microsoft.UI.Xaml.Controls.IconElement
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 31:   //  Microsoft.UI.Xaml.Controls.InfoBadge
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+            case 32:   //  Microsoft.UI.Xaml.Controls.InfoBadge
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 32:   //  Microsoft.UI.Xaml.Controls.Control
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 33:   //  Microsoft.UI.Xaml.Controls.Control
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 33:   //  OkayuLoader.MainWindow
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_33_MainWindow;
+            case 34:   //  OkayuLoader.MainWindow
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
+                userType.Activator = Activate_34_MainWindow;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 34:   //  Microsoft.UI.Xaml.Window
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 35:   //  Microsoft.UI.Xaml.Window
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 35:   //  OkayuLoader.Pages.AccountsPage
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_35_AccountsPage;
+            case 36:   //  OkayuLoader.Pages.AccountsDialogContent
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_36_AccountsDialogContent;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 36:   //  Microsoft.UI.Xaml.Controls.Page
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 37:   //  Microsoft.UI.Xaml.Controls.Page
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 37:   //  Microsoft.UI.Xaml.Controls.UserControl
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 38:   //  Microsoft.UI.Xaml.Controls.UserControl
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 38:   //  CommunityToolkit.WinUI.Controls.SettingsCard
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.ButtonBase"));
-                userType.Activator = Activate_38_SettingsCard;
-                userType.AddMemberName("Description");
+            case 39:   //  Microsoft.UI.Xaml.Controls.InfoBar
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_39_InfoBar;
+                userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.InfoBar.Content");
+                userType.AddMemberName("Content");
+                userType.AddMemberName("IsOpen");
+                userType.AddMemberName("Severity");
+                userType.AddMemberName("Title");
+                userType.AddMemberName("Message");
+                userType.AddMemberName("ActionButton");
+                userType.AddMemberName("CloseButtonCommand");
+                userType.AddMemberName("CloseButtonCommandParameter");
+                userType.AddMemberName("CloseButtonStyle");
+                userType.AddMemberName("ContentTemplate");
+                userType.AddMemberName("IconSource");
+                userType.AddMemberName("IsClosable");
+                userType.AddMemberName("IsIconVisible");
+                userType.AddMemberName("TemplateSettings");
+                xamlType = userType;
+                break;
+
+            case 40:   //  Microsoft.UI.Xaml.Controls.InfoBarSeverity
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Informational", global::Microsoft.UI.Xaml.Controls.InfoBarSeverity.Informational);
+                userType.AddEnumValue("Success", global::Microsoft.UI.Xaml.Controls.InfoBarSeverity.Success);
+                userType.AddEnumValue("Warning", global::Microsoft.UI.Xaml.Controls.InfoBarSeverity.Warning);
+                userType.AddEnumValue("Error", global::Microsoft.UI.Xaml.Controls.InfoBarSeverity.Error);
+                xamlType = userType;
+                break;
+
+            case 41:   //  Microsoft.UI.Xaml.Controls.Primitives.ButtonBase
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 42:   //  System.Windows.Input.ICommand
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 43:   //  Microsoft.UI.Xaml.Controls.IconSource
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 44:   //  Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 45:   //  CommunityToolkit.WinUI.Controls.SettingsCard
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.ButtonBase"));
+                userType.Activator = Activate_45_SettingsCard;
                 userType.AddMemberName("Header");
+                userType.AddMemberName("Description");
                 userType.AddMemberName("HeaderIcon");
                 userType.AddMemberName("ActionIcon");
                 userType.AddMemberName("ActionIconToolTip");
@@ -677,29 +793,43 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 39:   //  Microsoft.UI.Xaml.Controls.Primitives.ButtonBase
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 40:   //  CommunityToolkit.WinUI.Controls.ContentAlignment
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+            case 46:   //  CommunityToolkit.WinUI.Controls.ContentAlignment
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Right", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Right);
                 userType.AddEnumValue("Left", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Left);
                 userType.AddEnumValue("Vertical", global::CommunityToolkit.WinUI.Controls.ContentAlignment.Vertical);
                 xamlType = userType;
                 break;
 
-            case 41:   //  CommunityToolkit.WinUI.FontIconExtension
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension"));
-                userType.Activator = Activate_41_FontIconExtension;
+            case 47:   //  CommunityToolkit.WinUI.Controls.SettingsExpander
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_47_SettingsExpander;
+                userType.SetContentPropertyName("CommunityToolkit.WinUI.Controls.SettingsExpander.Content");
+                userType.AddMemberName("Content");
+                userType.AddMemberName("Header");
+                userType.AddMemberName("Description");
+                userType.AddMemberName("HeaderIcon");
+                userType.AddMemberName("Items");
+                userType.AddMemberName("ItemsSource");
+                userType.AddMemberName("ItemTemplate");
+                userType.AddMemberName("ItemContainerStyleSelector");
+                userType.AddMemberName("ItemsHeader");
+                userType.AddMemberName("ItemsFooter");
+                userType.AddMemberName("IsExpanded");
+                xamlType = userType;
+                break;
+
+            case 48:   //  CommunityToolkit.WinUI.FontIconExtension
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension"));
+                userType.Activator = Activate_48_FontIconExtension;
                 userType.AddMemberName("Glyph");
                 userType.AddMemberName("FontFamily");
                 userType.SetIsMarkupExtension();
                 xamlType = userType;
                 break;
 
-            case 42:   //  CommunityToolkit.WinUI.TextIconExtension
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Markup.MarkupExtension"));
+            case 49:   //  CommunityToolkit.WinUI.TextIconExtension
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Markup.MarkupExtension"));
                 userType.AddMemberName("FontSize");
                 userType.AddMemberName("FontWeight");
                 userType.AddMemberName("FontStyle");
@@ -710,49 +840,211 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 43:   //  Microsoft.UI.Xaml.Markup.MarkupExtension
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 50:   //  Microsoft.UI.Xaml.Markup.MarkupExtension
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 44:   //  Microsoft.UI.Xaml.Media.FontFamily
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 51:   //  Microsoft.UI.Xaml.Media.FontFamily
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 45:   //  Windows.UI.Text.FontWeight
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
+            case 52:   //  Windows.UI.Text.FontWeight
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 46:   //  Windows.UI.Text.FontStyle
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+            case 53:   //  Windows.UI.Text.FontStyle
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Normal", global::Windows.UI.Text.FontStyle.Normal);
                 userType.AddEnumValue("Oblique", global::Windows.UI.Text.FontStyle.Oblique);
                 userType.AddEnumValue("Italic", global::Windows.UI.Text.FontStyle.Italic);
                 xamlType = userType;
                 break;
 
-            case 47:   //  Microsoft.UI.Xaml.Media.Brush
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 54:   //  Microsoft.UI.Xaml.Media.Brush
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 48:   //  OkayuLoader.Pages.HomePage
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_48_HomePage;
+            case 55:   //  OkayuLoader.Pages.AccountsPage
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_55_AccountsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 49:   //  OkayuLoader.Pages.SettingsPage
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_49_SettingsPage;
+            case 56:   //  OkayuLoader.Pages.HomePage
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_56_HomePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 50:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_50_TreeViewNode;
+            case 57:   //  Microsoft.UI.Xaml.Controls.ScrollView
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_57_ScrollView;
+                userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.ScrollView.Content");
+                userType.AddMemberName("Content");
+                userType.AddMemberName("ComputedHorizontalScrollBarVisibility");
+                userType.AddMemberName("ComputedHorizontalScrollMode");
+                userType.AddMemberName("ComputedVerticalScrollBarVisibility");
+                userType.AddMemberName("ComputedVerticalScrollMode");
+                userType.AddMemberName("ContentOrientation");
+                userType.AddMemberName("CurrentAnchor");
+                userType.AddMemberName("ExpressionAnimationSources");
+                userType.AddMemberName("ExtentHeight");
+                userType.AddMemberName("ExtentWidth");
+                userType.AddMemberName("HorizontalAnchorRatio");
+                userType.AddMemberName("HorizontalOffset");
+                userType.AddMemberName("HorizontalScrollBarVisibility");
+                userType.AddMemberName("HorizontalScrollChainMode");
+                userType.AddMemberName("HorizontalScrollMode");
+                userType.AddMemberName("HorizontalScrollRailMode");
+                userType.AddMemberName("IgnoredInputKinds");
+                userType.AddMemberName("MaxZoomFactor");
+                userType.AddMemberName("MinZoomFactor");
+                userType.AddMemberName("ScrollPresenter");
+                userType.AddMemberName("ScrollableHeight");
+                userType.AddMemberName("ScrollableWidth");
+                userType.AddMemberName("State");
+                userType.AddMemberName("VerticalAnchorRatio");
+                userType.AddMemberName("VerticalOffset");
+                userType.AddMemberName("VerticalScrollBarVisibility");
+                userType.AddMemberName("VerticalScrollChainMode");
+                userType.AddMemberName("VerticalScrollMode");
+                userType.AddMemberName("VerticalScrollRailMode");
+                userType.AddMemberName("ViewportHeight");
+                userType.AddMemberName("ViewportWidth");
+                userType.AddMemberName("ZoomChainMode");
+                userType.AddMemberName("ZoomFactor");
+                userType.AddMemberName("ZoomMode");
+                xamlType = userType;
+                break;
+
+            case 58:   //  Microsoft.UI.Xaml.Visibility
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 59:   //  Microsoft.UI.Xaml.Controls.ScrollingScrollMode
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode.Enabled);
+                userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode.Disabled);
+                userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode.Auto);
+                xamlType = userType;
+                break;
+
+            case 60:   //  Microsoft.UI.Xaml.Controls.ScrollingContentOrientation
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Vertical", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.Vertical);
+                userType.AddEnumValue("Horizontal", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.Horizontal);
+                userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.None);
+                userType.AddEnumValue("Both", global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation.Both);
+                xamlType = userType;
+                break;
+
+            case 61:   //  Microsoft.UI.Composition.CompositionPropertySet
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Composition.CompositionObject"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 62:   //  Microsoft.UI.Composition.CompositionObject
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 63:   //  Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility.Auto);
+                userType.AddEnumValue("Visible", global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility.Visible);
+                userType.AddEnumValue("Hidden", global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility.Hidden);
+                xamlType = userType;
+                break;
+
+            case 64:   //  Microsoft.UI.Xaml.Controls.ScrollingChainMode
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Auto", global::Microsoft.UI.Xaml.Controls.ScrollingChainMode.Auto);
+                userType.AddEnumValue("Always", global::Microsoft.UI.Xaml.Controls.ScrollingChainMode.Always);
+                userType.AddEnumValue("Never", global::Microsoft.UI.Xaml.Controls.ScrollingChainMode.Never);
+                xamlType = userType;
+                break;
+
+            case 65:   //  Microsoft.UI.Xaml.Controls.ScrollingRailMode
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.ScrollingRailMode.Enabled);
+                userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.ScrollingRailMode.Disabled);
+                xamlType = userType;
+                break;
+
+            case 66:   //  Microsoft.UI.Xaml.Controls.ScrollingInputKinds
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("None", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.None);
+                userType.AddEnumValue("Touch", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Touch);
+                userType.AddEnumValue("Pen", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Pen);
+                userType.AddEnumValue("MouseWheel", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.MouseWheel);
+                userType.AddEnumValue("Keyboard", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Keyboard);
+                userType.AddEnumValue("Gamepad", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.Gamepad);
+                userType.AddEnumValue("All", global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds.All);
+                xamlType = userType;
+                break;
+
+            case 67:   //  Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.FrameworkElement"));
+                userType.SetContentPropertyName("Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter.Content");
+                userType.AddMemberName("Content");
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 68:   //  Microsoft.UI.Xaml.FrameworkElement
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 69:   //  Microsoft.UI.Xaml.Controls.ScrollingInteractionState
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Idle", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Idle);
+                userType.AddEnumValue("Interaction", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Interaction);
+                userType.AddEnumValue("Inertia", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Inertia);
+                userType.AddEnumValue("Animation", global::Microsoft.UI.Xaml.Controls.ScrollingInteractionState.Animation);
+                xamlType = userType;
+                break;
+
+            case 70:   //  Single
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 71:   //  Microsoft.UI.Xaml.Controls.ScrollingZoomMode
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
+                userType.AddEnumValue("Enabled", global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode.Enabled);
+                userType.AddEnumValue("Disabled", global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode.Disabled);
+                xamlType = userType;
+                break;
+
+            case 72:   //  CommunityToolkit.WinUI.BitmapIconExtension
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Markup.MarkupExtension"));
+                userType.Activator = Activate_72_BitmapIconExtension;
+                userType.AddMemberName("Source");
+                userType.AddMemberName("ShowAsMonochrome");
+                userType.SetIsMarkupExtension();
+                xamlType = userType;
+                break;
+
+            case 73:   //  System.Uri
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 74:   //  OkayuLoader.Pages.SettingsPage
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_74_SettingsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 75:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
+                userType.Activator = Activate_75_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -764,15 +1056,15 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 51:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
-                userType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.CollectionAdd = VectorAdd_51_IList;
+            case 76:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+                userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.CollectionAdd = VectorAdd_76_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 52:   //  Int32
-                xamlType = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+            case 77:   //  Int32
+                xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
             return xamlType;
@@ -855,200 +1147,200 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Media.MicaBackdrop)instance;
             that.Kind = (global::Microsoft.UI.Composition.SystemBackdrops.MicaKind)Value;
         }
-        private object get_2_NavigationView_Header(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.Header;
-        }
-        private void set_2_NavigationView_Header(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.Header = (global::System.Object)Value;
-        }
-        private object get_3_NavigationView_PaneTitle(object instance)
+        private object get_2_NavigationView_PaneTitle(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.PaneTitle;
         }
-        private void set_3_NavigationView_PaneTitle(object instance, object Value)
+        private void set_2_NavigationView_PaneTitle(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.PaneTitle = (global::System.String)Value;
         }
-        private object get_4_NavigationView_IsBackButtonVisible(object instance)
+        private object get_3_NavigationView_IsBackButtonVisible(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsBackButtonVisible;
         }
-        private void set_4_NavigationView_IsBackButtonVisible(object instance, object Value)
+        private void set_3_NavigationView_IsBackButtonVisible(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsBackButtonVisible = (global::Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible)Value;
         }
-        private object get_5_NavigationView_IsBackEnabled(object instance)
+        private object get_4_NavigationView_IsBackEnabled(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsBackEnabled;
         }
-        private void set_5_NavigationView_IsBackEnabled(object instance, object Value)
+        private void set_4_NavigationView_IsBackEnabled(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsBackEnabled = (global::System.Boolean)Value;
         }
-        private object get_6_NavigationView_IsSettingsVisible(object instance)
+        private object get_5_NavigationView_IsSettingsVisible(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsSettingsVisible;
         }
-        private void set_6_NavigationView_IsSettingsVisible(object instance, object Value)
+        private void set_5_NavigationView_IsSettingsVisible(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsSettingsVisible = (global::System.Boolean)Value;
         }
-        private object get_7_NavigationView_SelectionFollowsFocus(object instance)
+        private object get_6_NavigationView_SelectionFollowsFocus(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.SelectionFollowsFocus;
         }
-        private void set_7_NavigationView_SelectionFollowsFocus(object instance, object Value)
+        private void set_6_NavigationView_SelectionFollowsFocus(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.SelectionFollowsFocus = (global::Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus)Value;
         }
-        private object get_8_NavigationView_MenuItems(object instance)
+        private object get_7_NavigationView_Header(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.MenuItems;
+            return that.Header;
         }
-        private object get_9_NavigationView_FooterMenuItems(object instance)
+        private void set_7_NavigationView_Header(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.FooterMenuItems;
+            that.Header = (global::System.Object)Value;
         }
-        private object get_10_NavigationView_AlwaysShowHeader(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.AlwaysShowHeader;
-        }
-        private void set_10_NavigationView_AlwaysShowHeader(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.AlwaysShowHeader = (global::System.Boolean)Value;
-        }
-        private object get_11_NavigationView_AutoSuggestBox(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.AutoSuggestBox;
-        }
-        private void set_11_NavigationView_AutoSuggestBox(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.AutoSuggestBox = (global::Microsoft.UI.Xaml.Controls.AutoSuggestBox)Value;
-        }
-        private object get_12_NavigationView_CompactModeThresholdWidth(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.CompactModeThresholdWidth;
-        }
-        private void set_12_NavigationView_CompactModeThresholdWidth(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.CompactModeThresholdWidth = (global::System.Double)Value;
-        }
-        private object get_13_NavigationView_CompactPaneLength(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.CompactPaneLength;
-        }
-        private void set_13_NavigationView_CompactPaneLength(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.CompactPaneLength = (global::System.Double)Value;
-        }
-        private object get_14_NavigationView_ContentOverlay(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.ContentOverlay;
-        }
-        private void set_14_NavigationView_ContentOverlay(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.ContentOverlay = (global::Microsoft.UI.Xaml.UIElement)Value;
-        }
-        private object get_15_NavigationView_DisplayMode(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.DisplayMode;
-        }
-        private object get_16_NavigationView_ExpandedModeThresholdWidth(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.ExpandedModeThresholdWidth;
-        }
-        private void set_16_NavigationView_ExpandedModeThresholdWidth(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.ExpandedModeThresholdWidth = (global::System.Double)Value;
-        }
-        private object get_17_NavigationView_FooterMenuItemsSource(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.FooterMenuItemsSource;
-        }
-        private void set_17_NavigationView_FooterMenuItemsSource(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.FooterMenuItemsSource = (global::System.Object)Value;
-        }
-        private object get_18_NavigationView_HeaderTemplate(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.HeaderTemplate;
-        }
-        private void set_18_NavigationView_HeaderTemplate(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
-        }
-        private object get_19_NavigationView_IsPaneOpen(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.IsPaneOpen;
-        }
-        private void set_19_NavigationView_IsPaneOpen(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.IsPaneOpen = (global::System.Boolean)Value;
-        }
-        private object get_20_NavigationView_IsPaneToggleButtonVisible(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.IsPaneToggleButtonVisible;
-        }
-        private void set_20_NavigationView_IsPaneToggleButtonVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.IsPaneToggleButtonVisible = (global::System.Boolean)Value;
-        }
-        private object get_21_NavigationView_IsPaneVisible(object instance)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            return that.IsPaneVisible;
-        }
-        private void set_21_NavigationView_IsPaneVisible(object instance, object Value)
-        {
-            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
-            that.IsPaneVisible = (global::System.Boolean)Value;
-        }
-        private object get_22_NavigationView_IsTitleBarAutoPaddingEnabled(object instance)
+        private object get_8_NavigationView_IsTitleBarAutoPaddingEnabled(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.IsTitleBarAutoPaddingEnabled;
         }
-        private void set_22_NavigationView_IsTitleBarAutoPaddingEnabled(object instance, object Value)
+        private void set_8_NavigationView_IsTitleBarAutoPaddingEnabled(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             that.IsTitleBarAutoPaddingEnabled = (global::System.Boolean)Value;
+        }
+        private object get_9_NavigationView_MenuItems(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.MenuItems;
+        }
+        private object get_10_NavigationView_FooterMenuItems(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.FooterMenuItems;
+        }
+        private object get_11_NavigationView_AlwaysShowHeader(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.AlwaysShowHeader;
+        }
+        private void set_11_NavigationView_AlwaysShowHeader(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.AlwaysShowHeader = (global::System.Boolean)Value;
+        }
+        private object get_12_NavigationView_AutoSuggestBox(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.AutoSuggestBox;
+        }
+        private void set_12_NavigationView_AutoSuggestBox(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.AutoSuggestBox = (global::Microsoft.UI.Xaml.Controls.AutoSuggestBox)Value;
+        }
+        private object get_13_NavigationView_CompactModeThresholdWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.CompactModeThresholdWidth;
+        }
+        private void set_13_NavigationView_CompactModeThresholdWidth(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.CompactModeThresholdWidth = (global::System.Double)Value;
+        }
+        private object get_14_NavigationView_CompactPaneLength(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.CompactPaneLength;
+        }
+        private void set_14_NavigationView_CompactPaneLength(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.CompactPaneLength = (global::System.Double)Value;
+        }
+        private object get_15_NavigationView_ContentOverlay(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.ContentOverlay;
+        }
+        private void set_15_NavigationView_ContentOverlay(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.ContentOverlay = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_16_NavigationView_DisplayMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.DisplayMode;
+        }
+        private object get_17_NavigationView_ExpandedModeThresholdWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.ExpandedModeThresholdWidth;
+        }
+        private void set_17_NavigationView_ExpandedModeThresholdWidth(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.ExpandedModeThresholdWidth = (global::System.Double)Value;
+        }
+        private object get_18_NavigationView_FooterMenuItemsSource(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.FooterMenuItemsSource;
+        }
+        private void set_18_NavigationView_FooterMenuItemsSource(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.FooterMenuItemsSource = (global::System.Object)Value;
+        }
+        private object get_19_NavigationView_HeaderTemplate(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.HeaderTemplate;
+        }
+        private void set_19_NavigationView_HeaderTemplate(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.HeaderTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_20_NavigationView_IsPaneOpen(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.IsPaneOpen;
+        }
+        private void set_20_NavigationView_IsPaneOpen(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.IsPaneOpen = (global::System.Boolean)Value;
+        }
+        private object get_21_NavigationView_IsPaneToggleButtonVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.IsPaneToggleButtonVisible;
+        }
+        private void set_21_NavigationView_IsPaneToggleButtonVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.IsPaneToggleButtonVisible = (global::System.Boolean)Value;
+        }
+        private object get_22_NavigationView_IsPaneVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            return that.IsPaneVisible;
+        }
+        private void set_22_NavigationView_IsPaneVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
+            that.IsPaneVisible = (global::System.Boolean)Value;
         }
         private object get_23_NavigationView_MenuItemContainerStyle(object instance)
         {
@@ -1200,302 +1492,872 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationView)instance;
             return that.TemplateSettings;
         }
-        private object get_39_NavigationViewItem_Icon(object instance)
+        private object get_39_Thickness_Left(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            return that.Left;
+        }
+        private void set_39_Thickness_Left(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            that.Left = (global::System.Double)Value;
+        }
+        private object get_40_Thickness_Top(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            return that.Top;
+        }
+        private void set_40_Thickness_Top(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            that.Top = (global::System.Double)Value;
+        }
+        private object get_41_Thickness_Right(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            return that.Right;
+        }
+        private void set_41_Thickness_Right(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            that.Right = (global::System.Double)Value;
+        }
+        private object get_42_Thickness_Bottom(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            return that.Bottom;
+        }
+        private void set_42_Thickness_Bottom(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Thickness)instance;
+            that.Bottom = (global::System.Double)Value;
+        }
+        private object get_43_NavigationViewItem_Icon(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.Icon;
         }
-        private void set_39_NavigationViewItem_Icon(object instance, object Value)
+        private void set_43_NavigationViewItem_Icon(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.Icon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
         }
-        private object get_40_NavigationViewItem_CompactPaneLength(object instance)
+        private object get_44_NavigationViewItem_CompactPaneLength(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.CompactPaneLength;
         }
-        private object get_41_NavigationViewItem_HasUnrealizedChildren(object instance)
+        private object get_45_NavigationViewItem_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_41_NavigationViewItem_HasUnrealizedChildren(object instance, object Value)
+        private void set_45_NavigationViewItem_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_42_NavigationViewItem_InfoBadge(object instance)
+        private object get_46_NavigationViewItem_InfoBadge(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.InfoBadge;
         }
-        private void set_42_NavigationViewItem_InfoBadge(object instance, object Value)
+        private void set_46_NavigationViewItem_InfoBadge(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.InfoBadge = (global::Microsoft.UI.Xaml.Controls.InfoBadge)Value;
         }
-        private object get_43_NavigationViewItem_IsChildSelected(object instance)
+        private object get_47_NavigationViewItem_IsChildSelected(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.IsChildSelected;
         }
-        private void set_43_NavigationViewItem_IsChildSelected(object instance, object Value)
+        private void set_47_NavigationViewItem_IsChildSelected(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.IsChildSelected = (global::System.Boolean)Value;
         }
-        private object get_44_NavigationViewItem_IsExpanded(object instance)
+        private object get_48_NavigationViewItem_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.IsExpanded;
         }
-        private void set_44_NavigationViewItem_IsExpanded(object instance, object Value)
+        private void set_48_NavigationViewItem_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_45_NavigationViewItem_MenuItems(object instance)
+        private object get_49_NavigationViewItem_MenuItems(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.MenuItems;
         }
-        private object get_46_NavigationViewItem_MenuItemsSource(object instance)
+        private object get_50_NavigationViewItem_MenuItemsSource(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.MenuItemsSource;
         }
-        private void set_46_NavigationViewItem_MenuItemsSource(object instance, object Value)
+        private void set_50_NavigationViewItem_MenuItemsSource(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.MenuItemsSource = (global::System.Object)Value;
         }
-        private object get_47_NavigationViewItem_SelectsOnInvoked(object instance)
+        private object get_51_NavigationViewItem_SelectsOnInvoked(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             return that.SelectsOnInvoked;
         }
-        private void set_47_NavigationViewItem_SelectsOnInvoked(object instance, object Value)
+        private void set_51_NavigationViewItem_SelectsOnInvoked(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItem)instance;
             that.SelectsOnInvoked = (global::System.Boolean)Value;
         }
-        private object get_48_NavigationViewItemBase_IsSelected(object instance)
+        private object get_52_NavigationViewItemBase_IsSelected(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase)instance;
             return that.IsSelected;
         }
-        private void set_48_NavigationViewItemBase_IsSelected(object instance, object Value)
+        private void set_52_NavigationViewItemBase_IsSelected(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.NavigationViewItemBase)instance;
             that.IsSelected = (global::System.Boolean)Value;
         }
-        private object get_49_SettingsCard_Description(object instance)
+        private object get_53_InfoBar_Content(object instance)
         {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            return that.Description;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.Content;
         }
-        private void set_49_SettingsCard_Description(object instance, object Value)
+        private void set_53_InfoBar_Content(object instance, object Value)
         {
-            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
-            that.Description = (global::System.Object)Value;
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.Content = (global::System.Object)Value;
         }
-        private object get_50_SettingsCard_Header(object instance)
+        private object get_54_InfoBar_IsOpen(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.IsOpen;
+        }
+        private void set_54_InfoBar_IsOpen(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.IsOpen = (global::System.Boolean)Value;
+        }
+        private object get_55_InfoBar_Severity(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.Severity;
+        }
+        private void set_55_InfoBar_Severity(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.Severity = (global::Microsoft.UI.Xaml.Controls.InfoBarSeverity)Value;
+        }
+        private object get_56_InfoBar_Title(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.Title;
+        }
+        private void set_56_InfoBar_Title(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.Title = (global::System.String)Value;
+        }
+        private object get_57_InfoBar_Message(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.Message;
+        }
+        private void set_57_InfoBar_Message(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.Message = (global::System.String)Value;
+        }
+        private object get_58_InfoBar_ActionButton(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.ActionButton;
+        }
+        private void set_58_InfoBar_ActionButton(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.ActionButton = (global::Microsoft.UI.Xaml.Controls.Primitives.ButtonBase)Value;
+        }
+        private object get_59_InfoBar_CloseButtonCommand(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.CloseButtonCommand;
+        }
+        private void set_59_InfoBar_CloseButtonCommand(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.CloseButtonCommand = (global::System.Windows.Input.ICommand)Value;
+        }
+        private object get_60_InfoBar_CloseButtonCommandParameter(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.CloseButtonCommandParameter;
+        }
+        private void set_60_InfoBar_CloseButtonCommandParameter(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.CloseButtonCommandParameter = (global::System.Object)Value;
+        }
+        private object get_61_InfoBar_CloseButtonStyle(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.CloseButtonStyle;
+        }
+        private void set_61_InfoBar_CloseButtonStyle(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.CloseButtonStyle = (global::Microsoft.UI.Xaml.Style)Value;
+        }
+        private object get_62_InfoBar_ContentTemplate(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.ContentTemplate;
+        }
+        private void set_62_InfoBar_ContentTemplate(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.ContentTemplate = (global::Microsoft.UI.Xaml.DataTemplate)Value;
+        }
+        private object get_63_InfoBar_IconSource(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.IconSource;
+        }
+        private void set_63_InfoBar_IconSource(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.IconSource = (global::Microsoft.UI.Xaml.Controls.IconSource)Value;
+        }
+        private object get_64_InfoBar_IsClosable(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.IsClosable;
+        }
+        private void set_64_InfoBar_IsClosable(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.IsClosable = (global::System.Boolean)Value;
+        }
+        private object get_65_InfoBar_IsIconVisible(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.IsIconVisible;
+        }
+        private void set_65_InfoBar_IsIconVisible(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            that.IsIconVisible = (global::System.Boolean)Value;
+        }
+        private object get_66_InfoBar_TemplateSettings(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.InfoBar)instance;
+            return that.TemplateSettings;
+        }
+        private object get_67_SettingsCard_Header(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.Header;
         }
-        private void set_50_SettingsCard_Header(object instance, object Value)
+        private void set_67_SettingsCard_Header(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.Header = (global::System.Object)Value;
         }
-        private object get_51_SettingsCard_HeaderIcon(object instance)
+        private object get_68_SettingsCard_Description(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            return that.Description;
+        }
+        private void set_68_SettingsCard_Description(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
+            that.Description = (global::System.Object)Value;
+        }
+        private object get_69_SettingsCard_HeaderIcon(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.HeaderIcon;
         }
-        private void set_51_SettingsCard_HeaderIcon(object instance, object Value)
+        private void set_69_SettingsCard_HeaderIcon(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.HeaderIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
         }
-        private object get_52_SettingsCard_ActionIcon(object instance)
+        private object get_70_SettingsCard_ActionIcon(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.ActionIcon;
         }
-        private void set_52_SettingsCard_ActionIcon(object instance, object Value)
+        private void set_70_SettingsCard_ActionIcon(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.ActionIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
         }
-        private object get_53_SettingsCard_ActionIconToolTip(object instance)
+        private object get_71_SettingsCard_ActionIconToolTip(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.ActionIconToolTip;
         }
-        private void set_53_SettingsCard_ActionIconToolTip(object instance, object Value)
+        private void set_71_SettingsCard_ActionIconToolTip(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.ActionIconToolTip = (global::System.String)Value;
         }
-        private object get_54_SettingsCard_IsClickEnabled(object instance)
+        private object get_72_SettingsCard_IsClickEnabled(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.IsClickEnabled;
         }
-        private void set_54_SettingsCard_IsClickEnabled(object instance, object Value)
+        private void set_72_SettingsCard_IsClickEnabled(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.IsClickEnabled = (global::System.Boolean)Value;
         }
-        private object get_55_SettingsCard_ContentAlignment(object instance)
+        private object get_73_SettingsCard_ContentAlignment(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.ContentAlignment;
         }
-        private void set_55_SettingsCard_ContentAlignment(object instance, object Value)
+        private void set_73_SettingsCard_ContentAlignment(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.ContentAlignment = (global::CommunityToolkit.WinUI.Controls.ContentAlignment)Value;
         }
-        private object get_56_SettingsCard_IsActionIconVisible(object instance)
+        private object get_74_SettingsCard_IsActionIconVisible(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             return that.IsActionIconVisible;
         }
-        private void set_56_SettingsCard_IsActionIconVisible(object instance, object Value)
+        private void set_74_SettingsCard_IsActionIconVisible(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.Controls.SettingsCard)instance;
             that.IsActionIconVisible = (global::System.Boolean)Value;
         }
-        private object get_57_FontIconExtension_Glyph(object instance)
+        private object get_75_SettingsExpander_Content(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            return that.Content;
+        }
+        private void set_75_SettingsExpander_Content(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            that.Content = (global::System.Object)Value;
+        }
+        private object get_76_SettingsExpander_Header(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            return that.Header;
+        }
+        private void set_76_SettingsExpander_Header(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            that.Header = (global::System.Object)Value;
+        }
+        private object get_77_SettingsExpander_Description(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            return that.Description;
+        }
+        private void set_77_SettingsExpander_Description(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            that.Description = (global::System.Object)Value;
+        }
+        private object get_78_SettingsExpander_HeaderIcon(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            return that.HeaderIcon;
+        }
+        private void set_78_SettingsExpander_HeaderIcon(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            that.HeaderIcon = (global::Microsoft.UI.Xaml.Controls.IconElement)Value;
+        }
+        private object get_79_SettingsExpander_Items(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            return that.Items;
+        }
+        private void set_79_SettingsExpander_Items(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            that.Items = (global::System.Collections.Generic.IList<global::System.Object>)Value;
+        }
+        private object get_80_SettingsExpander_ItemsSource(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            return that.ItemsSource;
+        }
+        private void set_80_SettingsExpander_ItemsSource(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            that.ItemsSource = (global::System.Object)Value;
+        }
+        private object get_81_SettingsExpander_ItemTemplate(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            return that.ItemTemplate;
+        }
+        private void set_81_SettingsExpander_ItemTemplate(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            that.ItemTemplate = (global::System.Object)Value;
+        }
+        private object get_82_SettingsExpander_ItemContainerStyleSelector(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            return that.ItemContainerStyleSelector;
+        }
+        private void set_82_SettingsExpander_ItemContainerStyleSelector(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            that.ItemContainerStyleSelector = (global::Microsoft.UI.Xaml.Controls.StyleSelector)Value;
+        }
+        private object get_83_SettingsExpander_ItemsHeader(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            return that.ItemsHeader;
+        }
+        private void set_83_SettingsExpander_ItemsHeader(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            that.ItemsHeader = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_84_SettingsExpander_ItemsFooter(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            return that.ItemsFooter;
+        }
+        private void set_84_SettingsExpander_ItemsFooter(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            that.ItemsFooter = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_85_SettingsExpander_IsExpanded(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            return that.IsExpanded;
+        }
+        private void set_85_SettingsExpander_IsExpanded(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.Controls.SettingsExpander)instance;
+            that.IsExpanded = (global::System.Boolean)Value;
+        }
+        private object get_86_FontIconExtension_Glyph(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             return that.Glyph;
         }
-        private void set_57_FontIconExtension_Glyph(object instance, object Value)
+        private void set_86_FontIconExtension_Glyph(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             that.Glyph = (global::System.String)Value;
         }
-        private object get_58_FontIconExtension_FontFamily(object instance)
+        private object get_87_FontIconExtension_FontFamily(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             return that.FontFamily;
         }
-        private void set_58_FontIconExtension_FontFamily(object instance, object Value)
+        private void set_87_FontIconExtension_FontFamily(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.FontIconExtension)instance;
             that.FontFamily = (global::Microsoft.UI.Xaml.Media.FontFamily)Value;
         }
-        private object get_59_TextIconExtension_FontSize(object instance)
+        private object get_88_TextIconExtension_FontSize(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.FontSize;
         }
-        private void set_59_TextIconExtension_FontSize(object instance, object Value)
+        private void set_88_TextIconExtension_FontSize(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.FontSize = (global::System.Double)Value;
         }
-        private object get_60_TextIconExtension_FontWeight(object instance)
+        private object get_89_TextIconExtension_FontWeight(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.FontWeight;
         }
-        private void set_60_TextIconExtension_FontWeight(object instance, object Value)
+        private void set_89_TextIconExtension_FontWeight(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.FontWeight = (global::Windows.UI.Text.FontWeight)Value;
         }
-        private object get_61_TextIconExtension_FontStyle(object instance)
+        private object get_90_TextIconExtension_FontStyle(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.FontStyle;
         }
-        private void set_61_TextIconExtension_FontStyle(object instance, object Value)
+        private void set_90_TextIconExtension_FontStyle(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.FontStyle = (global::Windows.UI.Text.FontStyle)Value;
         }
-        private object get_62_TextIconExtension_Foreground(object instance)
+        private object get_91_TextIconExtension_Foreground(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.Foreground;
         }
-        private void set_62_TextIconExtension_Foreground(object instance, object Value)
+        private void set_91_TextIconExtension_Foreground(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.Foreground = (global::Microsoft.UI.Xaml.Media.Brush)Value;
         }
-        private object get_63_TextIconExtension_IsTextScaleFactorEnabled(object instance)
+        private object get_92_TextIconExtension_IsTextScaleFactorEnabled(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.IsTextScaleFactorEnabled;
         }
-        private void set_63_TextIconExtension_IsTextScaleFactorEnabled(object instance, object Value)
+        private void set_92_TextIconExtension_IsTextScaleFactorEnabled(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.IsTextScaleFactorEnabled = (global::System.Boolean)Value;
         }
-        private object get_64_TextIconExtension_MirroredWhenRightToLeft(object instance)
+        private object get_93_TextIconExtension_MirroredWhenRightToLeft(object instance)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             return that.MirroredWhenRightToLeft;
         }
-        private void set_64_TextIconExtension_MirroredWhenRightToLeft(object instance, object Value)
+        private void set_93_TextIconExtension_MirroredWhenRightToLeft(object instance, object Value)
         {
             var that = (global::CommunityToolkit.WinUI.TextIconExtension)instance;
             that.MirroredWhenRightToLeft = (global::System.Boolean)Value;
         }
-        private object get_65_TreeViewNode_Children(object instance)
+        private object get_94_ScrollView_Content(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.Content;
+        }
+        private void set_94_ScrollView_Content(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.Content = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_95_ScrollView_ComputedHorizontalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedHorizontalScrollBarVisibility;
+        }
+        private object get_96_ScrollView_ComputedHorizontalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedHorizontalScrollMode;
+        }
+        private object get_97_ScrollView_ComputedVerticalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedVerticalScrollBarVisibility;
+        }
+        private object get_98_ScrollView_ComputedVerticalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ComputedVerticalScrollMode;
+        }
+        private object get_99_ScrollView_ContentOrientation(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ContentOrientation;
+        }
+        private void set_99_ScrollView_ContentOrientation(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.ContentOrientation = (global::Microsoft.UI.Xaml.Controls.ScrollingContentOrientation)Value;
+        }
+        private object get_100_ScrollView_CurrentAnchor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.CurrentAnchor;
+        }
+        private object get_101_ScrollView_ExpressionAnimationSources(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ExpressionAnimationSources;
+        }
+        private object get_102_ScrollView_ExtentHeight(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ExtentHeight;
+        }
+        private object get_103_ScrollView_ExtentWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ExtentWidth;
+        }
+        private object get_104_ScrollView_HorizontalAnchorRatio(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalAnchorRatio;
+        }
+        private void set_104_ScrollView_HorizontalAnchorRatio(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalAnchorRatio = (global::System.Double)Value;
+        }
+        private object get_105_ScrollView_HorizontalOffset(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalOffset;
+        }
+        private object get_106_ScrollView_HorizontalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollBarVisibility;
+        }
+        private void set_106_ScrollView_HorizontalScrollBarVisibility(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollBarVisibility = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility)Value;
+        }
+        private object get_107_ScrollView_HorizontalScrollChainMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollChainMode;
+        }
+        private void set_107_ScrollView_HorizontalScrollChainMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
+        }
+        private object get_108_ScrollView_HorizontalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollMode;
+        }
+        private void set_108_ScrollView_HorizontalScrollMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollMode = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode)Value;
+        }
+        private object get_109_ScrollView_HorizontalScrollRailMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.HorizontalScrollRailMode;
+        }
+        private void set_109_ScrollView_HorizontalScrollRailMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.HorizontalScrollRailMode = (global::Microsoft.UI.Xaml.Controls.ScrollingRailMode)Value;
+        }
+        private object get_110_ScrollView_IgnoredInputKinds(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.IgnoredInputKinds;
+        }
+        private void set_110_ScrollView_IgnoredInputKinds(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.IgnoredInputKinds = (global::Microsoft.UI.Xaml.Controls.ScrollingInputKinds)Value;
+        }
+        private object get_111_ScrollView_MaxZoomFactor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.MaxZoomFactor;
+        }
+        private void set_111_ScrollView_MaxZoomFactor(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.MaxZoomFactor = (global::System.Double)Value;
+        }
+        private object get_112_ScrollView_MinZoomFactor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.MinZoomFactor;
+        }
+        private void set_112_ScrollView_MinZoomFactor(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.MinZoomFactor = (global::System.Double)Value;
+        }
+        private object get_113_ScrollView_ScrollPresenter(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ScrollPresenter;
+        }
+        private object get_114_ScrollPresenter_Content(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter)instance;
+            return that.Content;
+        }
+        private void set_114_ScrollPresenter_Content(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter)instance;
+            that.Content = (global::Microsoft.UI.Xaml.UIElement)Value;
+        }
+        private object get_115_ScrollView_ScrollableHeight(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ScrollableHeight;
+        }
+        private object get_116_ScrollView_ScrollableWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ScrollableWidth;
+        }
+        private object get_117_ScrollView_State(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.State;
+        }
+        private object get_118_ScrollView_VerticalAnchorRatio(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalAnchorRatio;
+        }
+        private void set_118_ScrollView_VerticalAnchorRatio(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalAnchorRatio = (global::System.Double)Value;
+        }
+        private object get_119_ScrollView_VerticalOffset(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalOffset;
+        }
+        private object get_120_ScrollView_VerticalScrollBarVisibility(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollBarVisibility;
+        }
+        private void set_120_ScrollView_VerticalScrollBarVisibility(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollBarVisibility = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility)Value;
+        }
+        private object get_121_ScrollView_VerticalScrollChainMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollChainMode;
+        }
+        private void set_121_ScrollView_VerticalScrollChainMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
+        }
+        private object get_122_ScrollView_VerticalScrollMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollMode;
+        }
+        private void set_122_ScrollView_VerticalScrollMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollMode = (global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode)Value;
+        }
+        private object get_123_ScrollView_VerticalScrollRailMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.VerticalScrollRailMode;
+        }
+        private void set_123_ScrollView_VerticalScrollRailMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.VerticalScrollRailMode = (global::Microsoft.UI.Xaml.Controls.ScrollingRailMode)Value;
+        }
+        private object get_124_ScrollView_ViewportHeight(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ViewportHeight;
+        }
+        private object get_125_ScrollView_ViewportWidth(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ViewportWidth;
+        }
+        private object get_126_ScrollView_ZoomChainMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ZoomChainMode;
+        }
+        private void set_126_ScrollView_ZoomChainMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.ZoomChainMode = (global::Microsoft.UI.Xaml.Controls.ScrollingChainMode)Value;
+        }
+        private object get_127_ScrollView_ZoomFactor(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ZoomFactor;
+        }
+        private object get_128_ScrollView_ZoomMode(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            return that.ZoomMode;
+        }
+        private void set_128_ScrollView_ZoomMode(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ScrollView)instance;
+            that.ZoomMode = (global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode)Value;
+        }
+        private object get_129_BitmapIconExtension_Source(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.BitmapIconExtension)instance;
+            return that.Source;
+        }
+        private void set_129_BitmapIconExtension_Source(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.BitmapIconExtension)instance;
+            that.Source = (global::System.Uri)Value;
+        }
+        private object get_130_BitmapIconExtension_ShowAsMonochrome(object instance)
+        {
+            var that = (global::CommunityToolkit.WinUI.BitmapIconExtension)instance;
+            return that.ShowAsMonochrome;
+        }
+        private void set_130_BitmapIconExtension_ShowAsMonochrome(object instance, object Value)
+        {
+            var that = (global::CommunityToolkit.WinUI.BitmapIconExtension)instance;
+            that.ShowAsMonochrome = (global::System.Boolean)Value;
+        }
+        private object get_131_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_66_TreeViewNode_Content(object instance)
+        private object get_132_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_66_TreeViewNode_Content(object instance, object Value)
+        private void set_132_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_67_TreeViewNode_Depth(object instance)
+        private object get_133_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_68_TreeViewNode_HasChildren(object instance)
+        private object get_134_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_69_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_135_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_69_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_135_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_70_TreeViewNode_IsExpanded(object instance)
+        private object get_136_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_70_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_136_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_71_TreeViewNode_Parent(object instance)
+        private object get_137_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -1503,502 +2365,946 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
 
         private global::Microsoft.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
-            global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember xamlMember = null;
-            global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType userType;
+            global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember xamlMember = null;
+            global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType userType;
 
             switch (longMemberName)
             {
             case "Microsoft.UI.Xaml.Controls.XamlControlsResources.UseCompactResources":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.XamlControlsResources");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "UseCompactResources", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.XamlControlsResources");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "UseCompactResources", "Boolean");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_0_XamlControlsResources_UseCompactResources;
                 xamlMember.Setter = set_0_XamlControlsResources_UseCompactResources;
                 break;
             case "Microsoft.UI.Xaml.Media.MicaBackdrop.Kind":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Media.MicaBackdrop");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "Kind", "Microsoft.UI.Composition.SystemBackdrops.MicaKind");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Media.MicaBackdrop");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Kind", "Microsoft.UI.Composition.SystemBackdrops.MicaKind");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_1_MicaBackdrop_Kind;
                 xamlMember.Setter = set_1_MicaBackdrop_Kind;
                 break;
-            case "Microsoft.UI.Xaml.Controls.NavigationView.Header":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "Header", "Object");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_NavigationView_Header;
-                xamlMember.Setter = set_2_NavigationView_Header;
-                break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneTitle":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "PaneTitle", "String");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "PaneTitle", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_3_NavigationView_PaneTitle;
-                xamlMember.Setter = set_3_NavigationView_PaneTitle;
+                xamlMember.Getter = get_2_NavigationView_PaneTitle;
+                xamlMember.Setter = set_2_NavigationView_PaneTitle;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsBackButtonVisible":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "IsBackButtonVisible", "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsBackButtonVisible", "Microsoft.UI.Xaml.Controls.NavigationViewBackButtonVisible");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_4_NavigationView_IsBackButtonVisible;
-                xamlMember.Setter = set_4_NavigationView_IsBackButtonVisible;
+                xamlMember.Getter = get_3_NavigationView_IsBackButtonVisible;
+                xamlMember.Setter = set_3_NavigationView_IsBackButtonVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsBackEnabled":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "IsBackEnabled", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsBackEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_5_NavigationView_IsBackEnabled;
-                xamlMember.Setter = set_5_NavigationView_IsBackEnabled;
+                xamlMember.Getter = get_4_NavigationView_IsBackEnabled;
+                xamlMember.Setter = set_4_NavigationView_IsBackEnabled;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsSettingsVisible":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "IsSettingsVisible", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsSettingsVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_6_NavigationView_IsSettingsVisible;
-                xamlMember.Setter = set_6_NavigationView_IsSettingsVisible;
+                xamlMember.Getter = get_5_NavigationView_IsSettingsVisible;
+                xamlMember.Setter = set_5_NavigationView_IsSettingsVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.SelectionFollowsFocus":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "SelectionFollowsFocus", "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "SelectionFollowsFocus", "Microsoft.UI.Xaml.Controls.NavigationViewSelectionFollowsFocus");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_7_NavigationView_SelectionFollowsFocus;
-                xamlMember.Setter = set_7_NavigationView_SelectionFollowsFocus;
+                xamlMember.Getter = get_6_NavigationView_SelectionFollowsFocus;
+                xamlMember.Setter = set_6_NavigationView_SelectionFollowsFocus;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NavigationView.Header":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Header", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_7_NavigationView_Header;
+                xamlMember.Setter = set_7_NavigationView_Header;
+                break;
+            case "Microsoft.UI.Xaml.Controls.NavigationView.IsTitleBarAutoPaddingEnabled":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsTitleBarAutoPaddingEnabled", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_8_NavigationView_IsTitleBarAutoPaddingEnabled;
+                xamlMember.Setter = set_8_NavigationView_IsTitleBarAutoPaddingEnabled;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItems":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "MenuItems", "System.Collections.Generic.IList`1<Object>");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "MenuItems", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_8_NavigationView_MenuItems;
+                xamlMember.Getter = get_9_NavigationView_MenuItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.FooterMenuItems":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "FooterMenuItems", "System.Collections.Generic.IList`1<Object>");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "FooterMenuItems", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_9_NavigationView_FooterMenuItems;
+                xamlMember.Getter = get_10_NavigationView_FooterMenuItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.AlwaysShowHeader":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "AlwaysShowHeader", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "AlwaysShowHeader", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_NavigationView_AlwaysShowHeader;
-                xamlMember.Setter = set_10_NavigationView_AlwaysShowHeader;
+                xamlMember.Getter = get_11_NavigationView_AlwaysShowHeader;
+                xamlMember.Setter = set_11_NavigationView_AlwaysShowHeader;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.AutoSuggestBox":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "AutoSuggestBox", "Microsoft.UI.Xaml.Controls.AutoSuggestBox");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "AutoSuggestBox", "Microsoft.UI.Xaml.Controls.AutoSuggestBox");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_11_NavigationView_AutoSuggestBox;
-                xamlMember.Setter = set_11_NavigationView_AutoSuggestBox;
+                xamlMember.Getter = get_12_NavigationView_AutoSuggestBox;
+                xamlMember.Setter = set_12_NavigationView_AutoSuggestBox;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.CompactModeThresholdWidth":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "CompactModeThresholdWidth", "Double");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "CompactModeThresholdWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_12_NavigationView_CompactModeThresholdWidth;
-                xamlMember.Setter = set_12_NavigationView_CompactModeThresholdWidth;
+                xamlMember.Getter = get_13_NavigationView_CompactModeThresholdWidth;
+                xamlMember.Setter = set_13_NavigationView_CompactModeThresholdWidth;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.CompactPaneLength":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "CompactPaneLength", "Double");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "CompactPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_13_NavigationView_CompactPaneLength;
-                xamlMember.Setter = set_13_NavigationView_CompactPaneLength;
+                xamlMember.Getter = get_14_NavigationView_CompactPaneLength;
+                xamlMember.Setter = set_14_NavigationView_CompactPaneLength;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.ContentOverlay":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "ContentOverlay", "Microsoft.UI.Xaml.UIElement");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ContentOverlay", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_14_NavigationView_ContentOverlay;
-                xamlMember.Setter = set_14_NavigationView_ContentOverlay;
+                xamlMember.Getter = get_15_NavigationView_ContentOverlay;
+                xamlMember.Setter = set_15_NavigationView_ContentOverlay;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.DisplayMode":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "DisplayMode", "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "DisplayMode", "Microsoft.UI.Xaml.Controls.NavigationViewDisplayMode");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_15_NavigationView_DisplayMode;
+                xamlMember.Getter = get_16_NavigationView_DisplayMode;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.ExpandedModeThresholdWidth":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "ExpandedModeThresholdWidth", "Double");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ExpandedModeThresholdWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_16_NavigationView_ExpandedModeThresholdWidth;
-                xamlMember.Setter = set_16_NavigationView_ExpandedModeThresholdWidth;
+                xamlMember.Getter = get_17_NavigationView_ExpandedModeThresholdWidth;
+                xamlMember.Setter = set_17_NavigationView_ExpandedModeThresholdWidth;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.FooterMenuItemsSource":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "FooterMenuItemsSource", "Object");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "FooterMenuItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_17_NavigationView_FooterMenuItemsSource;
-                xamlMember.Setter = set_17_NavigationView_FooterMenuItemsSource;
+                xamlMember.Getter = get_18_NavigationView_FooterMenuItemsSource;
+                xamlMember.Setter = set_18_NavigationView_FooterMenuItemsSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.HeaderTemplate":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "HeaderTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_18_NavigationView_HeaderTemplate;
-                xamlMember.Setter = set_18_NavigationView_HeaderTemplate;
+                xamlMember.Getter = get_19_NavigationView_HeaderTemplate;
+                xamlMember.Setter = set_19_NavigationView_HeaderTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsPaneOpen":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "IsPaneOpen", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsPaneOpen", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_19_NavigationView_IsPaneOpen;
-                xamlMember.Setter = set_19_NavigationView_IsPaneOpen;
+                xamlMember.Getter = get_20_NavigationView_IsPaneOpen;
+                xamlMember.Setter = set_20_NavigationView_IsPaneOpen;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsPaneToggleButtonVisible":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "IsPaneToggleButtonVisible", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsPaneToggleButtonVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_20_NavigationView_IsPaneToggleButtonVisible;
-                xamlMember.Setter = set_20_NavigationView_IsPaneToggleButtonVisible;
+                xamlMember.Getter = get_21_NavigationView_IsPaneToggleButtonVisible;
+                xamlMember.Setter = set_21_NavigationView_IsPaneToggleButtonVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.IsPaneVisible":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "IsPaneVisible", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsPaneVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_NavigationView_IsPaneVisible;
-                xamlMember.Setter = set_21_NavigationView_IsPaneVisible;
-                break;
-            case "Microsoft.UI.Xaml.Controls.NavigationView.IsTitleBarAutoPaddingEnabled":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "IsTitleBarAutoPaddingEnabled", "Boolean");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_NavigationView_IsTitleBarAutoPaddingEnabled;
-                xamlMember.Setter = set_22_NavigationView_IsTitleBarAutoPaddingEnabled;
+                xamlMember.Getter = get_22_NavigationView_IsPaneVisible;
+                xamlMember.Setter = set_22_NavigationView_IsPaneVisible;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemContainerStyle":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "MenuItemContainerStyle", "Microsoft.UI.Xaml.Style");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "MenuItemContainerStyle", "Microsoft.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_23_NavigationView_MenuItemContainerStyle;
                 xamlMember.Setter = set_23_NavigationView_MenuItemContainerStyle;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemContainerStyleSelector":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "MenuItemContainerStyleSelector", "Microsoft.UI.Xaml.Controls.StyleSelector");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "MenuItemContainerStyleSelector", "Microsoft.UI.Xaml.Controls.StyleSelector");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_24_NavigationView_MenuItemContainerStyleSelector;
                 xamlMember.Setter = set_24_NavigationView_MenuItemContainerStyleSelector;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemTemplate":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "MenuItemTemplate", "Microsoft.UI.Xaml.DataTemplate");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "MenuItemTemplate", "Microsoft.UI.Xaml.DataTemplate");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_25_NavigationView_MenuItemTemplate;
                 xamlMember.Setter = set_25_NavigationView_MenuItemTemplate;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemTemplateSelector":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "MenuItemTemplateSelector", "Microsoft.UI.Xaml.Controls.DataTemplateSelector");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "MenuItemTemplateSelector", "Microsoft.UI.Xaml.Controls.DataTemplateSelector");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_26_NavigationView_MenuItemTemplateSelector;
                 xamlMember.Setter = set_26_NavigationView_MenuItemTemplateSelector;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.MenuItemsSource":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "MenuItemsSource", "Object");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "MenuItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_27_NavigationView_MenuItemsSource;
                 xamlMember.Setter = set_27_NavigationView_MenuItemsSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.OpenPaneLength":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "OpenPaneLength", "Double");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "OpenPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_28_NavigationView_OpenPaneLength;
                 xamlMember.Setter = set_28_NavigationView_OpenPaneLength;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.OverflowLabelMode":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "OverflowLabelMode", "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "OverflowLabelMode", "Microsoft.UI.Xaml.Controls.NavigationViewOverflowLabelMode");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_29_NavigationView_OverflowLabelMode;
                 xamlMember.Setter = set_29_NavigationView_OverflowLabelMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneCustomContent":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "PaneCustomContent", "Microsoft.UI.Xaml.UIElement");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "PaneCustomContent", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_30_NavigationView_PaneCustomContent;
                 xamlMember.Setter = set_30_NavigationView_PaneCustomContent;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneDisplayMode":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "PaneDisplayMode", "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "PaneDisplayMode", "Microsoft.UI.Xaml.Controls.NavigationViewPaneDisplayMode");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_31_NavigationView_PaneDisplayMode;
                 xamlMember.Setter = set_31_NavigationView_PaneDisplayMode;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneFooter":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "PaneFooter", "Microsoft.UI.Xaml.UIElement");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "PaneFooter", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_32_NavigationView_PaneFooter;
                 xamlMember.Setter = set_32_NavigationView_PaneFooter;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneHeader":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "PaneHeader", "Microsoft.UI.Xaml.UIElement");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "PaneHeader", "Microsoft.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_33_NavigationView_PaneHeader;
                 xamlMember.Setter = set_33_NavigationView_PaneHeader;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.PaneToggleButtonStyle":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "PaneToggleButtonStyle", "Microsoft.UI.Xaml.Style");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "PaneToggleButtonStyle", "Microsoft.UI.Xaml.Style");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_34_NavigationView_PaneToggleButtonStyle;
                 xamlMember.Setter = set_34_NavigationView_PaneToggleButtonStyle;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.SelectedItem":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "SelectedItem", "Object");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_35_NavigationView_SelectedItem;
                 xamlMember.Setter = set_35_NavigationView_SelectedItem;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.SettingsItem":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "SettingsItem", "Object");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "SettingsItem", "Object");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_36_NavigationView_SettingsItem;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.ShoulderNavigationEnabled":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "ShoulderNavigationEnabled", "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ShoulderNavigationEnabled", "Microsoft.UI.Xaml.Controls.NavigationViewShoulderNavigationEnabled");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_37_NavigationView_ShoulderNavigationEnabled;
                 xamlMember.Setter = set_37_NavigationView_ShoulderNavigationEnabled;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationView.TemplateSettings":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings");
                 xamlMember.SetIsDependencyProperty();
                 xamlMember.Getter = get_38_NavigationView_TemplateSettings;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "Microsoft.UI.Xaml.Thickness.Left":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Left", "Double");
+                xamlMember.Getter = get_39_Thickness_Left;
+                xamlMember.Setter = set_39_Thickness_Left;
+                break;
+            case "Microsoft.UI.Xaml.Thickness.Top":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Top", "Double");
+                xamlMember.Getter = get_40_Thickness_Top;
+                xamlMember.Setter = set_40_Thickness_Top;
+                break;
+            case "Microsoft.UI.Xaml.Thickness.Right":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Right", "Double");
+                xamlMember.Getter = get_41_Thickness_Right;
+                xamlMember.Setter = set_41_Thickness_Right;
+                break;
+            case "Microsoft.UI.Xaml.Thickness.Bottom":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Thickness");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Bottom", "Double");
+                xamlMember.Getter = get_42_Thickness_Bottom;
+                xamlMember.Setter = set_42_Thickness_Bottom;
+                break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.Icon":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "Icon", "Microsoft.UI.Xaml.Controls.IconElement");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Icon", "Microsoft.UI.Xaml.Controls.IconElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_39_NavigationViewItem_Icon;
-                xamlMember.Setter = set_39_NavigationViewItem_Icon;
+                xamlMember.Getter = get_43_NavigationViewItem_Icon;
+                xamlMember.Setter = set_43_NavigationViewItem_Icon;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.CompactPaneLength":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "CompactPaneLength", "Double");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "CompactPaneLength", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_40_NavigationViewItem_CompactPaneLength;
+                xamlMember.Getter = get_44_NavigationViewItem_CompactPaneLength;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.HasUnrealizedChildren":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_41_NavigationViewItem_HasUnrealizedChildren;
-                xamlMember.Setter = set_41_NavigationViewItem_HasUnrealizedChildren;
+                xamlMember.Getter = get_45_NavigationViewItem_HasUnrealizedChildren;
+                xamlMember.Setter = set_45_NavigationViewItem_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.InfoBadge":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "InfoBadge", "Microsoft.UI.Xaml.Controls.InfoBadge");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "InfoBadge", "Microsoft.UI.Xaml.Controls.InfoBadge");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_42_NavigationViewItem_InfoBadge;
-                xamlMember.Setter = set_42_NavigationViewItem_InfoBadge;
+                xamlMember.Getter = get_46_NavigationViewItem_InfoBadge;
+                xamlMember.Setter = set_46_NavigationViewItem_InfoBadge;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.IsChildSelected":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "IsChildSelected", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsChildSelected", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_43_NavigationViewItem_IsChildSelected;
-                xamlMember.Setter = set_43_NavigationViewItem_IsChildSelected;
+                xamlMember.Getter = get_47_NavigationViewItem_IsChildSelected;
+                xamlMember.Setter = set_47_NavigationViewItem_IsChildSelected;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.IsExpanded":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_44_NavigationViewItem_IsExpanded;
-                xamlMember.Setter = set_44_NavigationViewItem_IsExpanded;
+                xamlMember.Getter = get_48_NavigationViewItem_IsExpanded;
+                xamlMember.Setter = set_48_NavigationViewItem_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.MenuItems":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "MenuItems", "System.Collections.Generic.IList`1<Object>");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "MenuItems", "System.Collections.Generic.IList`1<Object>");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_45_NavigationViewItem_MenuItems;
+                xamlMember.Getter = get_49_NavigationViewItem_MenuItems;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.MenuItemsSource":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "MenuItemsSource", "Object");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "MenuItemsSource", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_46_NavigationViewItem_MenuItemsSource;
-                xamlMember.Setter = set_46_NavigationViewItem_MenuItemsSource;
+                xamlMember.Getter = get_50_NavigationViewItem_MenuItemsSource;
+                xamlMember.Setter = set_50_NavigationViewItem_MenuItemsSource;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItem.SelectsOnInvoked":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "SelectsOnInvoked", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItem");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "SelectsOnInvoked", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_47_NavigationViewItem_SelectsOnInvoked;
-                xamlMember.Setter = set_47_NavigationViewItem_SelectsOnInvoked;
+                xamlMember.Getter = get_51_NavigationViewItem_SelectsOnInvoked;
+                xamlMember.Setter = set_51_NavigationViewItem_SelectsOnInvoked;
                 break;
             case "Microsoft.UI.Xaml.Controls.NavigationViewItemBase.IsSelected":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "IsSelected", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.NavigationViewItemBase");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsSelected", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_48_NavigationViewItemBase_IsSelected;
-                xamlMember.Setter = set_48_NavigationViewItemBase_IsSelected;
+                xamlMember.Getter = get_52_NavigationViewItemBase_IsSelected;
+                xamlMember.Setter = set_52_NavigationViewItemBase_IsSelected;
                 break;
-            case "CommunityToolkit.WinUI.Controls.SettingsCard.Description":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "Description", "Object");
+            case "Microsoft.UI.Xaml.Controls.InfoBar.Content":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_49_SettingsCard_Description;
-                xamlMember.Setter = set_49_SettingsCard_Description;
+                xamlMember.Getter = get_53_InfoBar_Content;
+                xamlMember.Setter = set_53_InfoBar_Content;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.IsOpen":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsOpen", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_54_InfoBar_IsOpen;
+                xamlMember.Setter = set_54_InfoBar_IsOpen;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.Severity":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Severity", "Microsoft.UI.Xaml.Controls.InfoBarSeverity");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_55_InfoBar_Severity;
+                xamlMember.Setter = set_55_InfoBar_Severity;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.Title":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Title", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_56_InfoBar_Title;
+                xamlMember.Setter = set_56_InfoBar_Title;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.Message":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Message", "String");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_57_InfoBar_Message;
+                xamlMember.Setter = set_57_InfoBar_Message;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.ActionButton":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ActionButton", "Microsoft.UI.Xaml.Controls.Primitives.ButtonBase");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_58_InfoBar_ActionButton;
+                xamlMember.Setter = set_58_InfoBar_ActionButton;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.CloseButtonCommand":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "CloseButtonCommand", "System.Windows.Input.ICommand");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_59_InfoBar_CloseButtonCommand;
+                xamlMember.Setter = set_59_InfoBar_CloseButtonCommand;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.CloseButtonCommandParameter":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "CloseButtonCommandParameter", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_60_InfoBar_CloseButtonCommandParameter;
+                xamlMember.Setter = set_60_InfoBar_CloseButtonCommandParameter;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.CloseButtonStyle":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "CloseButtonStyle", "Microsoft.UI.Xaml.Style");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_61_InfoBar_CloseButtonStyle;
+                xamlMember.Setter = set_61_InfoBar_CloseButtonStyle;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.ContentTemplate":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ContentTemplate", "Microsoft.UI.Xaml.DataTemplate");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_62_InfoBar_ContentTemplate;
+                xamlMember.Setter = set_62_InfoBar_ContentTemplate;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.IconSource":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IconSource", "Microsoft.UI.Xaml.Controls.IconSource");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_63_InfoBar_IconSource;
+                xamlMember.Setter = set_63_InfoBar_IconSource;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.IsClosable":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsClosable", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_64_InfoBar_IsClosable;
+                xamlMember.Setter = set_64_InfoBar_IsClosable;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.IsIconVisible":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsIconVisible", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_65_InfoBar_IsIconVisible;
+                xamlMember.Setter = set_65_InfoBar_IsIconVisible;
+                break;
+            case "Microsoft.UI.Xaml.Controls.InfoBar.TemplateSettings":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.InfoBar");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_66_InfoBar_TemplateSettings;
+                xamlMember.SetIsReadOnly();
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.Header":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "Header", "Object");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Header", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_50_SettingsCard_Header;
-                xamlMember.Setter = set_50_SettingsCard_Header;
+                xamlMember.Getter = get_67_SettingsCard_Header;
+                xamlMember.Setter = set_67_SettingsCard_Header;
+                break;
+            case "CommunityToolkit.WinUI.Controls.SettingsCard.Description":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Description", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_68_SettingsCard_Description;
+                xamlMember.Setter = set_68_SettingsCard_Description;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.HeaderIcon":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "HeaderIcon", "Microsoft.UI.Xaml.Controls.IconElement");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "HeaderIcon", "Microsoft.UI.Xaml.Controls.IconElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_51_SettingsCard_HeaderIcon;
-                xamlMember.Setter = set_51_SettingsCard_HeaderIcon;
+                xamlMember.Getter = get_69_SettingsCard_HeaderIcon;
+                xamlMember.Setter = set_69_SettingsCard_HeaderIcon;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.ActionIcon":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "ActionIcon", "Microsoft.UI.Xaml.Controls.IconElement");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ActionIcon", "Microsoft.UI.Xaml.Controls.IconElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_52_SettingsCard_ActionIcon;
-                xamlMember.Setter = set_52_SettingsCard_ActionIcon;
+                xamlMember.Getter = get_70_SettingsCard_ActionIcon;
+                xamlMember.Setter = set_70_SettingsCard_ActionIcon;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.ActionIconToolTip":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "ActionIconToolTip", "String");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ActionIconToolTip", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_53_SettingsCard_ActionIconToolTip;
-                xamlMember.Setter = set_53_SettingsCard_ActionIconToolTip;
+                xamlMember.Getter = get_71_SettingsCard_ActionIconToolTip;
+                xamlMember.Setter = set_71_SettingsCard_ActionIconToolTip;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.IsClickEnabled":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "IsClickEnabled", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsClickEnabled", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_54_SettingsCard_IsClickEnabled;
-                xamlMember.Setter = set_54_SettingsCard_IsClickEnabled;
+                xamlMember.Getter = get_72_SettingsCard_IsClickEnabled;
+                xamlMember.Setter = set_72_SettingsCard_IsClickEnabled;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.ContentAlignment":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "ContentAlignment", "CommunityToolkit.WinUI.Controls.ContentAlignment");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ContentAlignment", "CommunityToolkit.WinUI.Controls.ContentAlignment");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_55_SettingsCard_ContentAlignment;
-                xamlMember.Setter = set_55_SettingsCard_ContentAlignment;
+                xamlMember.Getter = get_73_SettingsCard_ContentAlignment;
+                xamlMember.Setter = set_73_SettingsCard_ContentAlignment;
                 break;
             case "CommunityToolkit.WinUI.Controls.SettingsCard.IsActionIconVisible":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "IsActionIconVisible", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsCard");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsActionIconVisible", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_56_SettingsCard_IsActionIconVisible;
-                xamlMember.Setter = set_56_SettingsCard_IsActionIconVisible;
+                xamlMember.Getter = get_74_SettingsCard_IsActionIconVisible;
+                xamlMember.Setter = set_74_SettingsCard_IsActionIconVisible;
+                break;
+            case "CommunityToolkit.WinUI.Controls.SettingsExpander.Content":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Content", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_75_SettingsExpander_Content;
+                xamlMember.Setter = set_75_SettingsExpander_Content;
+                break;
+            case "CommunityToolkit.WinUI.Controls.SettingsExpander.Header":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Header", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_76_SettingsExpander_Header;
+                xamlMember.Setter = set_76_SettingsExpander_Header;
+                break;
+            case "CommunityToolkit.WinUI.Controls.SettingsExpander.Description":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Description", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_77_SettingsExpander_Description;
+                xamlMember.Setter = set_77_SettingsExpander_Description;
+                break;
+            case "CommunityToolkit.WinUI.Controls.SettingsExpander.HeaderIcon":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "HeaderIcon", "Microsoft.UI.Xaml.Controls.IconElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_78_SettingsExpander_HeaderIcon;
+                xamlMember.Setter = set_78_SettingsExpander_HeaderIcon;
+                break;
+            case "CommunityToolkit.WinUI.Controls.SettingsExpander.Items":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Items", "System.Collections.Generic.IList`1<Object>");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_79_SettingsExpander_Items;
+                xamlMember.Setter = set_79_SettingsExpander_Items;
+                break;
+            case "CommunityToolkit.WinUI.Controls.SettingsExpander.ItemsSource":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ItemsSource", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_80_SettingsExpander_ItemsSource;
+                xamlMember.Setter = set_80_SettingsExpander_ItemsSource;
+                break;
+            case "CommunityToolkit.WinUI.Controls.SettingsExpander.ItemTemplate":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ItemTemplate", "Object");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_81_SettingsExpander_ItemTemplate;
+                xamlMember.Setter = set_81_SettingsExpander_ItemTemplate;
+                break;
+            case "CommunityToolkit.WinUI.Controls.SettingsExpander.ItemContainerStyleSelector":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ItemContainerStyleSelector", "Microsoft.UI.Xaml.Controls.StyleSelector");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_82_SettingsExpander_ItemContainerStyleSelector;
+                xamlMember.Setter = set_82_SettingsExpander_ItemContainerStyleSelector;
+                break;
+            case "CommunityToolkit.WinUI.Controls.SettingsExpander.ItemsHeader":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ItemsHeader", "Microsoft.UI.Xaml.UIElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_83_SettingsExpander_ItemsHeader;
+                xamlMember.Setter = set_83_SettingsExpander_ItemsHeader;
+                break;
+            case "CommunityToolkit.WinUI.Controls.SettingsExpander.ItemsFooter":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ItemsFooter", "Microsoft.UI.Xaml.UIElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_84_SettingsExpander_ItemsFooter;
+                xamlMember.Setter = set_84_SettingsExpander_ItemsFooter;
+                break;
+            case "CommunityToolkit.WinUI.Controls.SettingsExpander.IsExpanded":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.Controls.SettingsExpander");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_85_SettingsExpander_IsExpanded;
+                xamlMember.Setter = set_85_SettingsExpander_IsExpanded;
                 break;
             case "CommunityToolkit.WinUI.FontIconExtension.Glyph":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.FontIconExtension");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "Glyph", "String");
-                xamlMember.Getter = get_57_FontIconExtension_Glyph;
-                xamlMember.Setter = set_57_FontIconExtension_Glyph;
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.FontIconExtension");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Glyph", "String");
+                xamlMember.Getter = get_86_FontIconExtension_Glyph;
+                xamlMember.Setter = set_86_FontIconExtension_Glyph;
                 break;
             case "CommunityToolkit.WinUI.FontIconExtension.FontFamily":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.FontIconExtension");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "FontFamily", "Microsoft.UI.Xaml.Media.FontFamily");
-                xamlMember.Getter = get_58_FontIconExtension_FontFamily;
-                xamlMember.Setter = set_58_FontIconExtension_FontFamily;
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.FontIconExtension");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "FontFamily", "Microsoft.UI.Xaml.Media.FontFamily");
+                xamlMember.Getter = get_87_FontIconExtension_FontFamily;
+                xamlMember.Setter = set_87_FontIconExtension_FontFamily;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.FontSize":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "FontSize", "Double");
-                xamlMember.Getter = get_59_TextIconExtension_FontSize;
-                xamlMember.Setter = set_59_TextIconExtension_FontSize;
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "FontSize", "Double");
+                xamlMember.Getter = get_88_TextIconExtension_FontSize;
+                xamlMember.Setter = set_88_TextIconExtension_FontSize;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.FontWeight":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "FontWeight", "Windows.UI.Text.FontWeight");
-                xamlMember.Getter = get_60_TextIconExtension_FontWeight;
-                xamlMember.Setter = set_60_TextIconExtension_FontWeight;
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "FontWeight", "Windows.UI.Text.FontWeight");
+                xamlMember.Getter = get_89_TextIconExtension_FontWeight;
+                xamlMember.Setter = set_89_TextIconExtension_FontWeight;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.FontStyle":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "FontStyle", "Windows.UI.Text.FontStyle");
-                xamlMember.Getter = get_61_TextIconExtension_FontStyle;
-                xamlMember.Setter = set_61_TextIconExtension_FontStyle;
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "FontStyle", "Windows.UI.Text.FontStyle");
+                xamlMember.Getter = get_90_TextIconExtension_FontStyle;
+                xamlMember.Setter = set_90_TextIconExtension_FontStyle;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.Foreground":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "Foreground", "Microsoft.UI.Xaml.Media.Brush");
-                xamlMember.Getter = get_62_TextIconExtension_Foreground;
-                xamlMember.Setter = set_62_TextIconExtension_Foreground;
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Foreground", "Microsoft.UI.Xaml.Media.Brush");
+                xamlMember.Getter = get_91_TextIconExtension_Foreground;
+                xamlMember.Setter = set_91_TextIconExtension_Foreground;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.IsTextScaleFactorEnabled":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "IsTextScaleFactorEnabled", "Boolean");
-                xamlMember.Getter = get_63_TextIconExtension_IsTextScaleFactorEnabled;
-                xamlMember.Setter = set_63_TextIconExtension_IsTextScaleFactorEnabled;
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsTextScaleFactorEnabled", "Boolean");
+                xamlMember.Getter = get_92_TextIconExtension_IsTextScaleFactorEnabled;
+                xamlMember.Setter = set_92_TextIconExtension_IsTextScaleFactorEnabled;
                 break;
             case "CommunityToolkit.WinUI.TextIconExtension.MirroredWhenRightToLeft":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "MirroredWhenRightToLeft", "Boolean");
-                xamlMember.Getter = get_64_TextIconExtension_MirroredWhenRightToLeft;
-                xamlMember.Setter = set_64_TextIconExtension_MirroredWhenRightToLeft;
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.TextIconExtension");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "MirroredWhenRightToLeft", "Boolean");
+                xamlMember.Getter = get_93_TextIconExtension_MirroredWhenRightToLeft;
+                xamlMember.Setter = set_93_TextIconExtension_MirroredWhenRightToLeft;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.Content":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Content", "Microsoft.UI.Xaml.UIElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_94_ScrollView_Content;
+                xamlMember.Setter = set_94_ScrollView_Content;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedHorizontalScrollBarVisibility":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ComputedHorizontalScrollBarVisibility", "Microsoft.UI.Xaml.Visibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_95_ScrollView_ComputedHorizontalScrollBarVisibility;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedHorizontalScrollMode":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ComputedHorizontalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_96_ScrollView_ComputedHorizontalScrollMode;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedVerticalScrollBarVisibility":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ComputedVerticalScrollBarVisibility", "Microsoft.UI.Xaml.Visibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_97_ScrollView_ComputedVerticalScrollBarVisibility;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ComputedVerticalScrollMode":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ComputedVerticalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_98_ScrollView_ComputedVerticalScrollMode;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ContentOrientation":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ContentOrientation", "Microsoft.UI.Xaml.Controls.ScrollingContentOrientation");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_99_ScrollView_ContentOrientation;
+                xamlMember.Setter = set_99_ScrollView_ContentOrientation;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.CurrentAnchor":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "CurrentAnchor", "Microsoft.UI.Xaml.UIElement");
+                xamlMember.Getter = get_100_ScrollView_CurrentAnchor;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ExpressionAnimationSources":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ExpressionAnimationSources", "Microsoft.UI.Composition.CompositionPropertySet");
+                xamlMember.Getter = get_101_ScrollView_ExpressionAnimationSources;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ExtentHeight":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ExtentHeight", "Double");
+                xamlMember.Getter = get_102_ScrollView_ExtentHeight;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ExtentWidth":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ExtentWidth", "Double");
+                xamlMember.Getter = get_103_ScrollView_ExtentWidth;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalAnchorRatio":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "HorizontalAnchorRatio", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_104_ScrollView_HorizontalAnchorRatio;
+                xamlMember.Setter = set_104_ScrollView_HorizontalAnchorRatio;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalOffset":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "HorizontalOffset", "Double");
+                xamlMember.Getter = get_105_ScrollView_HorizontalOffset;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollBarVisibility":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "HorizontalScrollBarVisibility", "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_106_ScrollView_HorizontalScrollBarVisibility;
+                xamlMember.Setter = set_106_ScrollView_HorizontalScrollBarVisibility;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollChainMode":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "HorizontalScrollChainMode", "Microsoft.UI.Xaml.Controls.ScrollingChainMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_107_ScrollView_HorizontalScrollChainMode;
+                xamlMember.Setter = set_107_ScrollView_HorizontalScrollChainMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollMode":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "HorizontalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_108_ScrollView_HorizontalScrollMode;
+                xamlMember.Setter = set_108_ScrollView_HorizontalScrollMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.HorizontalScrollRailMode":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "HorizontalScrollRailMode", "Microsoft.UI.Xaml.Controls.ScrollingRailMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_109_ScrollView_HorizontalScrollRailMode;
+                xamlMember.Setter = set_109_ScrollView_HorizontalScrollRailMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.IgnoredInputKinds":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IgnoredInputKinds", "Microsoft.UI.Xaml.Controls.ScrollingInputKinds");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_110_ScrollView_IgnoredInputKinds;
+                xamlMember.Setter = set_110_ScrollView_IgnoredInputKinds;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.MaxZoomFactor":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "MaxZoomFactor", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_111_ScrollView_MaxZoomFactor;
+                xamlMember.Setter = set_111_ScrollView_MaxZoomFactor;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.MinZoomFactor":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "MinZoomFactor", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_112_ScrollView_MinZoomFactor;
+                xamlMember.Setter = set_112_ScrollView_MinZoomFactor;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ScrollPresenter":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ScrollPresenter", "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_113_ScrollView_ScrollPresenter;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter.Content":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Content", "Microsoft.UI.Xaml.UIElement");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_114_ScrollPresenter_Content;
+                xamlMember.Setter = set_114_ScrollPresenter_Content;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ScrollableHeight":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ScrollableHeight", "Double");
+                xamlMember.Getter = get_115_ScrollView_ScrollableHeight;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ScrollableWidth":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ScrollableWidth", "Double");
+                xamlMember.Getter = get_116_ScrollView_ScrollableWidth;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.State":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "State", "Microsoft.UI.Xaml.Controls.ScrollingInteractionState");
+                xamlMember.Getter = get_117_ScrollView_State;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalAnchorRatio":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "VerticalAnchorRatio", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_118_ScrollView_VerticalAnchorRatio;
+                xamlMember.Setter = set_118_ScrollView_VerticalAnchorRatio;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalOffset":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "VerticalOffset", "Double");
+                xamlMember.Getter = get_119_ScrollView_VerticalOffset;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollBarVisibility":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "VerticalScrollBarVisibility", "Microsoft.UI.Xaml.Controls.ScrollingScrollBarVisibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_120_ScrollView_VerticalScrollBarVisibility;
+                xamlMember.Setter = set_120_ScrollView_VerticalScrollBarVisibility;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollChainMode":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "VerticalScrollChainMode", "Microsoft.UI.Xaml.Controls.ScrollingChainMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_121_ScrollView_VerticalScrollChainMode;
+                xamlMember.Setter = set_121_ScrollView_VerticalScrollChainMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollMode":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "VerticalScrollMode", "Microsoft.UI.Xaml.Controls.ScrollingScrollMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_122_ScrollView_VerticalScrollMode;
+                xamlMember.Setter = set_122_ScrollView_VerticalScrollMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.VerticalScrollRailMode":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "VerticalScrollRailMode", "Microsoft.UI.Xaml.Controls.ScrollingRailMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_123_ScrollView_VerticalScrollRailMode;
+                xamlMember.Setter = set_123_ScrollView_VerticalScrollRailMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ViewportHeight":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ViewportHeight", "Double");
+                xamlMember.Getter = get_124_ScrollView_ViewportHeight;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ViewportWidth":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ViewportWidth", "Double");
+                xamlMember.Getter = get_125_ScrollView_ViewportWidth;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ZoomChainMode":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ZoomChainMode", "Microsoft.UI.Xaml.Controls.ScrollingChainMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_126_ScrollView_ZoomChainMode;
+                xamlMember.Setter = set_126_ScrollView_ZoomChainMode;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ZoomFactor":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ZoomFactor", "Single");
+                xamlMember.Getter = get_127_ScrollView_ZoomFactor;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ScrollView.ZoomMode":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ScrollView");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ZoomMode", "Microsoft.UI.Xaml.Controls.ScrollingZoomMode");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_128_ScrollView_ZoomMode;
+                xamlMember.Setter = set_128_ScrollView_ZoomMode;
+                break;
+            case "CommunityToolkit.WinUI.BitmapIconExtension.Source":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.BitmapIconExtension");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Source", "System.Uri");
+                xamlMember.Getter = get_129_BitmapIconExtension_Source;
+                xamlMember.Setter = set_129_BitmapIconExtension_Source;
+                break;
+            case "CommunityToolkit.WinUI.BitmapIconExtension.ShowAsMonochrome":
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("CommunityToolkit.WinUI.BitmapIconExtension");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "ShowAsMonochrome", "Boolean");
+                xamlMember.Getter = get_130_BitmapIconExtension_ShowAsMonochrome;
+                xamlMember.Setter = set_130_BitmapIconExtension_ShowAsMonochrome;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_65_TreeViewNode_Children;
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
+                xamlMember.Getter = get_131_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "Content", "Object");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_66_TreeViewNode_Content;
-                xamlMember.Setter = set_66_TreeViewNode_Content;
+                xamlMember.Getter = get_132_TreeViewNode_Content;
+                xamlMember.Setter = set_132_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_67_TreeViewNode_Depth;
+                xamlMember.Getter = get_133_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_68_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_134_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_69_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_69_TreeViewNode_HasUnrealizedChildren;
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
+                xamlMember.Getter = get_135_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_135_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_70_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_70_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_136_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_136_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
-                userType = (global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember = new global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_71_TreeViewNode_Parent;
+                userType = (global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
+                xamlMember.Getter = get_137_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }
@@ -2058,10 +3364,10 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
 
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.UI.Xaml.Markup.Compiler"," 3.0.0.2404")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-    internal class XamlUserType : global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlSystemBaseType
+    internal class XamlUserType : global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType
         , global::Microsoft.UI.Xaml.Markup.IXamlType
     {
-        global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlTypeInfoProvider _provider;
         global::Microsoft.UI.Xaml.Markup.IXamlType _baseType;
         global::Microsoft.UI.Xaml.Markup.IXamlType _boxedType;
         bool _isArray;
@@ -2076,7 +3382,7 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
         global::System.Collections.Generic.Dictionary<string, string> _memberNames;
         global::System.Collections.Generic.Dictionary<string, object> _enumValues;
 
-        public XamlUserType(global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Microsoft.UI.Xaml.Markup.IXamlType baseType)
+        public XamlUserType(global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlTypeInfoProvider provider, string fullName, global::System.Type fullType, global::Microsoft.UI.Xaml.Markup.IXamlType baseType)
             :base(fullName, fullType)
         {
             _provider = provider;
@@ -2291,7 +3597,7 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     internal class XamlMember : global::Microsoft.UI.Xaml.Markup.IXamlMember
     {
-        global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlTypeInfoProvider _provider;
+        global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlTypeInfoProvider _provider;
         string _name;
         bool _isAttachable;
         bool _isDependencyProperty;
@@ -2300,7 +3606,7 @@ namespace OkayuLoader.OkayuLoader_XamlTypeInfo
         string _typeName;
         string _targetTypeName;
 
-        public XamlMember(global::OkayuLoader.OkayuLoader_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
+        public XamlMember(global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlTypeInfoProvider provider, string name, string typeName)
         {
             _name = name;
             _typeName = typeName;

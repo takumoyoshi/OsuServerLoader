@@ -1,1 +1,0 @@
-C:\Users\klonerovsky\VS projects\OkayuLoader\publish\OkayuLoader_1.1.0.0_x64_Debug_Test\OkayuLoader_1.1.0.0_x64_Debug.msix

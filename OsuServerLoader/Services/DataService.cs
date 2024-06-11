@@ -18,7 +18,7 @@ namespace OkayuLoader.Services
         public void CreateDataFile()
         {
             string userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            string pathDataFile = System.IO.Path.Combine(userFolderPath, ".OkayuLoader\\AccountsBase.db");
+            string pathDataFile = System.IO.Path.Combine(userFolderPath, ".OsuServerLoader\\AccountsBase.db");
 
             var dbFile = File.Create(pathDataFile);
             dbFile.Close();
@@ -41,7 +41,7 @@ namespace OkayuLoader.Services
         public void AddRow(Account account)
         {
             string userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            string pathDataFile = System.IO.Path.Combine(userFolderPath, ".OkayuLoader\\AccountsBase.db");
+            string pathDataFile = System.IO.Path.Combine(userFolderPath, ".OsuServerLoader\\AccountsBase.db");
 
             using (var connection = new SqliteConnection("Data Source=" + pathDataFile))
             {
@@ -61,7 +61,7 @@ namespace OkayuLoader.Services
         public List<Account> LoadAccounts()
         {
             string userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            string pathDataFile = System.IO.Path.Combine(userFolderPath, ".OkayuLoader\\AccountsBase.db");
+            string pathDataFile = System.IO.Path.Combine(userFolderPath, ".OsuServerLoader\\AccountsBase.db");
             List<Account> accounts = new List<Account>();
             Account account = new Account();
 
@@ -98,7 +98,7 @@ namespace OkayuLoader.Services
         public void DeleteRow(string tag)
         {
             string userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            string pathDataFile = System.IO.Path.Combine(userFolderPath, ".OkayuLoader\\AccountsBase.db");
+            string pathDataFile = System.IO.Path.Combine(userFolderPath, ".OsuServerLoader\\AccountsBase.db");
 
             using (var connection = new SqliteConnection("Data Source=" + pathDataFile))
             {
@@ -115,7 +115,7 @@ namespace OkayuLoader.Services
         public Account GetAccount(string tag)
         {
             string userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            string pathDataFile = System.IO.Path.Combine(userFolderPath, ".OkayuLoader\\AccountsBase.db");
+            string pathDataFile = System.IO.Path.Combine(userFolderPath, ".OsuServerLoader\\AccountsBase.db");
             Account account = new Account();
 
             using (var connection = new SqliteConnection("Data Source=" + pathDataFile))

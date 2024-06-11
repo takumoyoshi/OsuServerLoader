@@ -40,14 +40,14 @@
                 </controls:SettingsCard>
 
                 <TextBlock Style="{StaticResource BodyStrongTextBlockStyle}" Text="About" Margin="0,2,0,6"/>
-                <controls:SettingsExpander Header="Okayu Loader" 
+                <controls:SettingsExpander Header="Osu Server Loader" 
                                            Description="© Artem Klonerovsky. GPL-3.0 license."
                                            HeaderIcon="{ui:BitmapIcon Source=ms-appx:///Assets/StoreLogo.png}">
-                    <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text="Version 1.1.0" />
+                    <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text="Version 1.1.1" />
                     <controls:SettingsExpander.Items>
                         <controls:SettingsCard HorizontalContentAlignment="Left" ContentAlignment="Left">
                             <StackPanel Margin="-12,0,0,0" Orientation="Vertical">
-                                <HyperlinkButton Content="Github"  NavigateUri="https://github.com/takumoyoshi/OkayuLoader"/>
+                                <HyperlinkButton Content="Github"  NavigateUri="https://github.com/takumoyoshi/OsuServerLoader"/>
                                 <HyperlinkButton Content="Discord" NavigateUri="https://discord.gg/JWCCA67Vge" />
                                 <HyperlinkButton Content="Okayu" NavigateUri="https://osu.risunasa.xyz" />
                             </StackPanel>

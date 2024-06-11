@@ -1,9 +1,9 @@
 {
   "profiles": {
-    "OkayuLoader (Package)": {
+    "OsuServerLoader (Package)": {
       "commandName": "MsixPackage"
     },
-    "OkayuLoader (Unpackaged)": {
+    "OsuServerLoader (Unpackaged)": {
       "commandName": "Project"
     }
   }

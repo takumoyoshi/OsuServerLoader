@@ -8,24 +8,69 @@
     xmlns:controls="using:CommunityToolkit.WinUI.Controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    xmlns:ui="using:CommunityToolkit.WinUI"
-    Margin="57,10,5,0">
+    xmlns:ui="using:CommunityToolkit.WinUI">
 
-    <StackPanel>
-        <TextBlock Text="OkayuLoader - tool for osu!. It runs osu! with devflag that you choosed!"/>
+    <Grid Margin="24,0,24,16">
+        <StackPanel Spacing="6">
+            <InfoBar x:ConnectionId='3' x:Name="InfoBarSecurity"
+                     IsOpen="True"
+                     Severity="Warning"
+                     Title="Patcher can't be used!"
+                     Message="You are running osu! on the bancho server. If you run the patcher, it may restrict your account, so don't use it!" />
+            <controls:SettingsExpander x:ConnectionId='4' x:Name="SettingsCardServer"
+                                       Description="Choose the server where you want to play!"
+                                       Header="Server"
+                                       HeaderIcon="{ui:FontIcon Glyph=&#xEDA3;}"
+                                       IsEnabled="True">
+                <ComboBox x:ConnectionId='7' SelectedIndex="0" x:Name="ComboBoxServerList"                                             >
+                    <ComboBoxItem>Bancho</ComboBoxItem>
+                    <ComboBoxItem>Okayu</ComboBoxItem>
+                    <ComboBoxItem>Realistik</ComboBoxItem>
+                    <ComboBoxItem>Ascension</ComboBoxItem>
+                    <ComboBoxItem>Heia</ComboBoxItem>
+                    <ComboBoxItem>Lisek</ComboBoxItem>
+                    <ComboBoxItem>Ripple</ComboBoxItem>
+                    <ComboBoxItem>Gatari</ComboBoxItem>
+                    <ComboBoxItem>Halcyon</ComboBoxItem>
+                    <ComboBoxItem>EZ-PP farm</ComboBoxItem>
+                    <ComboBoxItem>Akatsuki</ComboBoxItem>
+                </ComboBox>
+                <controls:SettingsExpander.Items>
+                    <controls:SettingsCard Header="Use custom server" 
+                                           Description="If you can't find your server in the list"
+                                           IsEnabled="True">
+                        <ToggleSwitch x:ConnectionId='10' x:Name="ToggleSwitchCustomServer"                                          />
+                    </controls:SettingsCard>
+                    <controls:SettingsCard x:ConnectionId='8' Header="Custom server"
+                                           Description="Enter your own server where you want to play"
+                                           IsEnabled="True"
+                                           x:Name="SettingsCardCustomServer">
+                        <TextBox x:ConnectionId='9' x:Name="TextBoxCustomServer" MinWidth="200" PlaceholderText="example.domain"                                              />
+                    </controls:SettingsCard>
+                </controls:SettingsExpander.Items>
+            </controls:SettingsExpander>
 
-        <controls:SettingsCard x:ConnectionId='2' x:Name="Сука"
-                               Description="Я три часа убил чтоб найти как работает эта хуйня"
-                               Header="Сука"
-                               HeaderIcon="{ui:FontIcon Glyph=&#xE799;}"
-                               IsEnabled="True">
-            <ComboBox SelectedIndex="0">
-                <ComboBoxItem>Option 1</ComboBoxItem>
-                <ComboBoxItem>Option 2</ComboBoxItem>
-                <ComboBoxItem>Option 3</ComboBoxItem>
-            </ComboBox>
-        </controls:SettingsCard>
 
-    </StackPanel>
+            <controls:SettingsCard x:ConnectionId='5' x:Name="SettingsCardPatcher"
+                                   Header="Enable patcher"
+                                   HeaderIcon="{ui:FontIcon Glyph=&#xE943;}"
+                                   IsEnabled="True">
+                <controls:SettingsCard.Description>
+                    <Grid>
+                        <HyperlinkButton Content="Repostory of this patcher" NavigateUri="https://github.com/rushiiMachine/osu-patcher" Grid.Row="0" />
+                    </Grid>
+                </controls:SettingsCard.Description>
+                <ToggleSwitch x:ConnectionId='6' x:Name="ToggleSwitchPatcher"                                     />
+            </controls:SettingsCard>
+        </StackPanel>
+
+        <Button x:ConnectionId='2' Content="Run osu!" Style="{StaticResource AccentButtonStyle}"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Stretch"
+                x:Name="ButtonPlayOsu"
+                                              
+                IsEnabled="True"/>
+
+    </Grid>
 </Page>
 

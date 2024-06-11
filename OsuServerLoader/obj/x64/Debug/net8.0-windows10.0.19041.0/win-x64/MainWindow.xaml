@@ -19,41 +19,45 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <Grid x:ConnectionId='2' x:Name="AppTitleBar" Height="32" Padding="7,0,0,0">
+        <Grid x:ConnectionId='2' x:Name="AppTitleBar" Height="48" Padding="8,0,0,0">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition x:ConnectionId='8' x:Name="LeftPaddingColumn" Width="0"/>
                 <ColumnDefinition/>
                 <ColumnDefinition x:ConnectionId='9' x:Name="RightPaddingColumn" Width="0"/>
             </Grid.ColumnDefinitions>
-            <Image x:ConnectionId='10' x:Name="TitleBarIcon" Source="ms-appx:///Assets/StoreLogo.png"
-           Grid.Column="1"
-           HorizontalAlignment="Left"
-           Width="16" Height="16"
-           Margin="8,0,0,0"/>
+            <Image x:ConnectionId='10' x:Name="TitleBarIcon" Source="ms-appx:///Assets/Square150x150Logo.scale-200.png"
+                   Grid.Column="1"
+                   HorizontalAlignment="Left"
+                   Width="20" Height="20"
+                   Margin="6,0,0,0"/>
             <TextBlock x:ConnectionId='11' x:Name="TitleBarTextBlock" 
-               Text="App title" 
-               Style="{StaticResource CaptionTextBlockStyle}"
-               Grid.Column="1"
-               VerticalAlignment="Center"
-               Margin="32,0,0,0"/>
+                       Text="App title" 
+                       Style="{StaticResource CaptionTextBlockStyle}"
+                       Grid.Column="1"
+                       VerticalAlignment="Center"
+                       Margin="39,0,0,0"/>
         </Grid>
 
-        <NavigationView x:ConnectionId='3' x:Name="nvMain"
-                Header="This is Header Text"
-                PaneTitle="Okayu Loader"
+        <NavigationView x:ConnectionId='3' x:Name="NavigationView"
+                PaneTitle="Hide navigation"
                 IsBackButtonVisible="Collapsed"
                 IsBackEnabled="False"
                                                          
                 IsSettingsVisible="False"
                                            
                 SelectionFollowsFocus="Enabled"
-                        Grid.Row="1">
+                Header="Header"
+                IsTitleBarAutoPaddingEnabled="False"
+                Grid.Row="1">
+            <NavigationView.Resources>
+                <Thickness x:Key="NavigationViewHeaderMargin">24,20,24,12</Thickness>
+            </NavigationView.Resources>
             <NavigationView.MenuItems>
-                <NavigationViewItem x:ConnectionId='4' Icon="Home" Content="Home" x:Name="nv_home" />
+                <NavigationViewItem x:ConnectionId='4' Icon="Home" Content="Home" x:Name="NvTabHome" />
             </NavigationView.MenuItems>
             <NavigationView.FooterMenuItems>
-                <NavigationViewItem x:ConnectionId='5' Icon="Contact" Content="Accounts" x:Name="nv_accounts" />
-                <NavigationViewItem x:ConnectionId='6' Icon="Setting" Content="Settings" x:Name="nv_settings" />
+                <NavigationViewItem x:ConnectionId='5' Icon="Contact" Content="Accounts" x:Name="NvTabAccounts" />
+                <NavigationViewItem x:ConnectionId='6' Icon="Setting" Content="Settings" x:Name="NvTabSettings" />
             </NavigationView.FooterMenuItems>
             <Frame x:ConnectionId='7' x:Name="contentFrame"/>
         </NavigationView>

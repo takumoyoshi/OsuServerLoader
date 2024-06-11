@@ -32,8 +32,8 @@ namespace OkayuLoader.Services
         public void CreateConfigFile()
         {
             string userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            string pathConfigFolder = System.IO.Path.Combine(userFolderPath, ".OkayuLoader");
-            string pathConfigFile = System.IO.Path.Combine(userFolderPath, ".OkayuLoader\\UiSettings.cfg");
+            string pathConfigFolder = System.IO.Path.Combine(userFolderPath, ".OsuServerLoader");
+            string pathConfigFile = System.IO.Path.Combine(userFolderPath, ".OsuServerLoader\\UiSettings.cfg");
 
             if (Directory.Exists(pathConfigFolder))
             {
@@ -68,7 +68,7 @@ namespace OkayuLoader.Services
         public UiSettings Load() 
         {
             string userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            string pathConfigFile = System.IO.Path.Combine(userFolderPath, ".OkayuLoader\\UiSettings.cfg");
+            string pathConfigFile = System.IO.Path.Combine(userFolderPath, ".OsuServerLoader\\UiSettings.cfg");
 
             bool fileExists = File.Exists(pathConfigFile);
             if (fileExists == false)
@@ -88,7 +88,7 @@ namespace OkayuLoader.Services
         public void Save(UiSettings currentSettings)
         {
             string userFolderPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
-            string pathConfigFile = System.IO.Path.Combine(userFolderPath, ".OkayuLoader\\UiSettings.cfg");
+            string pathConfigFile = System.IO.Path.Combine(userFolderPath, ".OsuServerLoader\\UiSettings.cfg");
 
             File.Delete(pathConfigFile);
             string jsonConfig = JsonSerializer.Serialize(currentSettings);

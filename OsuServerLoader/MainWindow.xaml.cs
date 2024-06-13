@@ -5,10 +5,10 @@ using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 using Windows.ApplicationModel;
 
-using OkayuLoader.Pages;
+using OsuServerLoader.Pages;
 using System.Runtime.InteropServices;
 
-namespace OkayuLoader
+namespace OsuServerLoader
 {
 
     public sealed partial class MainWindow : Window

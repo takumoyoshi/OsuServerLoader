@@ -1,8 +1,8 @@
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using OkayuLoader.Services;
+using OsuServerLoader.Services;
 
-namespace OkayuLoader.Pages
+namespace OsuServerLoader.Pages
 {
     public sealed partial class AccountsDialogContent : Page
     {

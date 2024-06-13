@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OkayuLoader.Services
+namespace OsuServerLoader.Services
 {
     internal class GlobalVars
     {
@@ -22,17 +22,17 @@ namespace OkayuLoader.Services
 
         public static string[] _serverDevFlags =
         {
-            "",
-            "-devserver risunasa.xyz",
-            "-devserver ussr.pl",
-            "-devserver ascension.wtf",
-            "-devserver heia.kim",
-            "-devserver lisek.world",
-            "-devserver ripple.moe",
-            "-devserver gatari.pw",
-            "-devserver halcyon.moe",
-            "-devserver ez-pp.farm",
-            "-devserver akatsuki.pw"
+            "ppy.sh",
+            "osuokayu.moe",
+            "ussr.pl",
+            "ascension.wtf",
+            "heia.kim",
+            "lisek.world",
+            "ripple.moe",
+            "gatari.pw",
+            "halcyon.moe",
+            "ez-pp.farm",
+            "akatsuki.pw"
         };
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using Microsoft.Data.Sqlite;
 
-namespace OkayuLoader.Services
+namespace OsuServerLoader.Services
 {
     public class Account
     {

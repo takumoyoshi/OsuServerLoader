@@ -8,7 +8,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace OkayuLoader
+namespace OsuServerLoader
 {
     public partial class App : global::Microsoft.UI.Xaml.Markup.IXamlMetadataProvider
     {
@@ -259,9 +259,9 @@ namespace OsuServerLoader.OsuServerLoader_XamlTypeInfo
             _typeNameTable[31] = "Microsoft.UI.Xaml.Controls.IconElement";
             _typeNameTable[32] = "Microsoft.UI.Xaml.Controls.InfoBadge";
             _typeNameTable[33] = "Microsoft.UI.Xaml.Controls.Control";
-            _typeNameTable[34] = "OkayuLoader.MainWindow";
+            _typeNameTable[34] = "OsuServerLoader.MainWindow";
             _typeNameTable[35] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[36] = "OkayuLoader.Pages.AccountsDialogContent";
+            _typeNameTable[36] = "OsuServerLoader.Pages.AccountsDialogContent";
             _typeNameTable[37] = "Microsoft.UI.Xaml.Controls.Page";
             _typeNameTable[38] = "Microsoft.UI.Xaml.Controls.UserControl";
             _typeNameTable[39] = "Microsoft.UI.Xaml.Controls.InfoBar";
@@ -280,8 +280,8 @@ namespace OsuServerLoader.OsuServerLoader_XamlTypeInfo
             _typeNameTable[52] = "Windows.UI.Text.FontWeight";
             _typeNameTable[53] = "Windows.UI.Text.FontStyle";
             _typeNameTable[54] = "Microsoft.UI.Xaml.Media.Brush";
-            _typeNameTable[55] = "OkayuLoader.Pages.AccountsPage";
-            _typeNameTable[56] = "OkayuLoader.Pages.HomePage";
+            _typeNameTable[55] = "OsuServerLoader.Pages.AccountsPage";
+            _typeNameTable[56] = "OsuServerLoader.Pages.HomePage";
             _typeNameTable[57] = "Microsoft.UI.Xaml.Controls.ScrollView";
             _typeNameTable[58] = "Microsoft.UI.Xaml.Visibility";
             _typeNameTable[59] = "Microsoft.UI.Xaml.Controls.ScrollingScrollMode";
@@ -299,7 +299,7 @@ namespace OsuServerLoader.OsuServerLoader_XamlTypeInfo
             _typeNameTable[71] = "Microsoft.UI.Xaml.Controls.ScrollingZoomMode";
             _typeNameTable[72] = "CommunityToolkit.WinUI.BitmapIconExtension";
             _typeNameTable[73] = "System.Uri";
-            _typeNameTable[74] = "OkayuLoader.Pages.SettingsPage";
+            _typeNameTable[74] = "OsuServerLoader.Pages.SettingsPage";
             _typeNameTable[75] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
             _typeNameTable[76] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
             _typeNameTable[77] = "Int32";
@@ -339,9 +339,9 @@ namespace OsuServerLoader.OsuServerLoader_XamlTypeInfo
             _typeTable[31] = typeof(global::Microsoft.UI.Xaml.Controls.IconElement);
             _typeTable[32] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBadge);
             _typeTable[33] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
-            _typeTable[34] = typeof(global::OkayuLoader.MainWindow);
+            _typeTable[34] = typeof(global::OsuServerLoader.MainWindow);
             _typeTable[35] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[36] = typeof(global::OkayuLoader.Pages.AccountsDialogContent);
+            _typeTable[36] = typeof(global::OsuServerLoader.Pages.AccountsDialogContent);
             _typeTable[37] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
             _typeTable[38] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
             _typeTable[39] = typeof(global::Microsoft.UI.Xaml.Controls.InfoBar);
@@ -360,8 +360,8 @@ namespace OsuServerLoader.OsuServerLoader_XamlTypeInfo
             _typeTable[52] = typeof(global::Windows.UI.Text.FontWeight);
             _typeTable[53] = typeof(global::Windows.UI.Text.FontStyle);
             _typeTable[54] = typeof(global::Microsoft.UI.Xaml.Media.Brush);
-            _typeTable[55] = typeof(global::OkayuLoader.Pages.AccountsPage);
-            _typeTable[56] = typeof(global::OkayuLoader.Pages.HomePage);
+            _typeTable[55] = typeof(global::OsuServerLoader.Pages.AccountsPage);
+            _typeTable[56] = typeof(global::OsuServerLoader.Pages.HomePage);
             _typeTable[57] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollView);
             _typeTable[58] = typeof(global::Microsoft.UI.Xaml.Visibility);
             _typeTable[59] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingScrollMode);
@@ -379,7 +379,7 @@ namespace OsuServerLoader.OsuServerLoader_XamlTypeInfo
             _typeTable[71] = typeof(global::Microsoft.UI.Xaml.Controls.ScrollingZoomMode);
             _typeTable[72] = typeof(global::CommunityToolkit.WinUI.BitmapIconExtension);
             _typeTable[73] = typeof(global::System.Uri);
-            _typeTable[74] = typeof(global::OkayuLoader.Pages.SettingsPage);
+            _typeTable[74] = typeof(global::OsuServerLoader.Pages.SettingsPage);
             _typeTable[75] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
             _typeTable[76] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
             _typeTable[77] = typeof(global::System.Int32);
@@ -423,19 +423,19 @@ namespace OsuServerLoader.OsuServerLoader_XamlTypeInfo
         private object Activate_26_NavigationViewTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewTemplateSettings(); }
         private object Activate_29_NavigationViewItem() { return new global::Microsoft.UI.Xaml.Controls.NavigationViewItem(); }
         private object Activate_32_InfoBadge() { return new global::Microsoft.UI.Xaml.Controls.InfoBadge(); }
-        private object Activate_34_MainWindow() { return new global::OkayuLoader.MainWindow(); }
-        private object Activate_36_AccountsDialogContent() { return new global::OkayuLoader.Pages.AccountsDialogContent(); }
+        private object Activate_34_MainWindow() { return new global::OsuServerLoader.MainWindow(); }
+        private object Activate_36_AccountsDialogContent() { return new global::OsuServerLoader.Pages.AccountsDialogContent(); }
         private object Activate_39_InfoBar() { return new global::Microsoft.UI.Xaml.Controls.InfoBar(); }
         private object Activate_44_InfoBarTemplateSettings() { return new global::Microsoft.UI.Xaml.Controls.InfoBarTemplateSettings(); }
         private object Activate_45_SettingsCard() { return new global::CommunityToolkit.WinUI.Controls.SettingsCard(); }
         private object Activate_47_SettingsExpander() { return new global::CommunityToolkit.WinUI.Controls.SettingsExpander(); }
         private object Activate_48_FontIconExtension() { return new global::CommunityToolkit.WinUI.FontIconExtension(); }
-        private object Activate_55_AccountsPage() { return new global::OkayuLoader.Pages.AccountsPage(); }
-        private object Activate_56_HomePage() { return new global::OkayuLoader.Pages.HomePage(); }
+        private object Activate_55_AccountsPage() { return new global::OsuServerLoader.Pages.AccountsPage(); }
+        private object Activate_56_HomePage() { return new global::OsuServerLoader.Pages.HomePage(); }
         private object Activate_57_ScrollView() { return new global::Microsoft.UI.Xaml.Controls.ScrollView(); }
         private object Activate_67_ScrollPresenter() { return new global::Microsoft.UI.Xaml.Controls.Primitives.ScrollPresenter(); }
         private object Activate_72_BitmapIconExtension() { return new global::CommunityToolkit.WinUI.BitmapIconExtension(); }
-        private object Activate_74_SettingsPage() { return new global::OkayuLoader.Pages.SettingsPage(); }
+        private object Activate_74_SettingsPage() { return new global::OsuServerLoader.Pages.SettingsPage(); }
         private object Activate_75_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
@@ -703,7 +703,7 @@ namespace OsuServerLoader.OsuServerLoader_XamlTypeInfo
                 xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 34:   //  OkayuLoader.MainWindow
+            case 34:   //  OsuServerLoader.MainWindow
                 userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
                 userType.Activator = Activate_34_MainWindow;
                 userType.SetIsLocalType();
@@ -714,7 +714,7 @@ namespace OsuServerLoader.OsuServerLoader_XamlTypeInfo
                 xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 36:   //  OkayuLoader.Pages.AccountsDialogContent
+            case 36:   //  OsuServerLoader.Pages.AccountsDialogContent
                 userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_36_AccountsDialogContent;
                 userType.SetIsLocalType();
@@ -866,14 +866,14 @@ namespace OsuServerLoader.OsuServerLoader_XamlTypeInfo
                 xamlType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 55:   //  OkayuLoader.Pages.AccountsPage
+            case 55:   //  OsuServerLoader.Pages.AccountsPage
                 userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_55_AccountsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 56:   //  OkayuLoader.Pages.HomePage
+            case 56:   //  OsuServerLoader.Pages.HomePage
                 userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_56_HomePage;
                 userType.SetIsLocalType();
@@ -1035,7 +1035,7 @@ namespace OsuServerLoader.OsuServerLoader_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 74:   //  OkayuLoader.Pages.SettingsPage
+            case 74:   //  OsuServerLoader.Pages.SettingsPage
                 userType = new global::OsuServerLoader.OsuServerLoader_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_74_SettingsPage;
                 userType.SetIsLocalType();

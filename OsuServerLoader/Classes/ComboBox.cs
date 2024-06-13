@@ -1,4 +1,4 @@
-﻿namespace OkayuLoader.Classes
+﻿namespace OsuServerLoader.Classes
 {
     public class ComboBoxItem
     {

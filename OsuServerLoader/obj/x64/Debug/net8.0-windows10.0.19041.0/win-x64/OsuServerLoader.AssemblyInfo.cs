@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OsuServerLoader")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0a096ed0384bbd227383891c16421ba5c06ba82")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d5d445e74c5d537a6f64f2671314e280f1d47efd")]
 [assembly: System.Reflection.AssemblyProductAttribute("OsuServerLoader")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OsuServerLoader")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

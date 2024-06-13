@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text.Json;
 
-namespace OkayuLoader.Services
+namespace OsuServerLoader.Services
 {
 
     public class UiSettings

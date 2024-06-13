@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 
 
-using OkayuLoader.Services;
-using OkayuLoader.Tools;
+using OsuServerLoader.Services;
+using OsuServerLoader.Tools;
 
-namespace OkayuLoader.Pages
+namespace OsuServerLoader.Pages
 {
     public sealed partial class HomePage : Page
     {
@@ -125,14 +125,14 @@ namespace OkayuLoader.Pages
             } 
             else
             {
-                devserverFlag = GlobalVars.serverDevFlags[ComboBoxServerList.SelectedIndex];
+                devserverFlag = "-devserver " + GlobalVars.serverDevFlags[ComboBoxServerList.SelectedIndex];
             }
             documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
             if (uiConfig.useCustomAccount)
             {
                 Account account = dataService.GetAccount(uiConfig.selectedAccountTag);
-                fileEditTool.ChangeAccountForOsu((osuFolderPath + "\\osu!." + username + ".cfg"), account.name, account.password);
+                fileEditTool.ChangeAccountForOsu((osuFolderPath + "\\osu!." + username + ".cfg"), account.name, account.password, GlobalVars.serverDevFlags[ComboBoxServerList.SelectedIndex]);
             }
 
             await Task.Delay(1000);
@@ -155,7 +155,7 @@ namespace OkayuLoader.Pages
                 ContentDialog dialog = new ContentDialog();
                 dialog.XamlRoot = this.XamlRoot;
                 dialog.Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style;
-                dialog.Title = "Okayu Loader finished its work!";
+                dialog.Title = "Osu Server Loader finished its work!";
                 dialog.PrimaryButtonText = "OK";
                 dialog.SecondaryButtonText = "Don't show this window again";
                 dialog.DefaultButton = ContentDialogButton.Primary;

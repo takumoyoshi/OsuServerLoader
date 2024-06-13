@@ -1,12 +1,12 @@
 using System;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
-using OkayuLoader.Services;
-using OkayuLoader.Classes;
+using OsuServerLoader.Services;
+using OsuServerLoader.Classes;
 using System.Collections.Generic;
 using Windows.UI.Notifications;
 
-namespace OkayuLoader.Pages
+namespace OsuServerLoader.Pages
 {
     public sealed partial class AccountsPage : Page
     {

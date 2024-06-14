@@ -43,7 +43,7 @@
                 <controls:SettingsExpander Header="Osu Server Loader" 
                                            Description="© Artem Klonerovsky. GPL-3.0 license."
                                            HeaderIcon="{ui:BitmapIcon Source=ms-appx:///Assets/StoreLogo.png}">
-                    <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text="Version 1.1.1" />
+                    <TextBlock Foreground="{ThemeResource TextFillColorSecondaryBrush}" Text="Version 1.1.2" />
                     <controls:SettingsExpander.Items>
                         <controls:SettingsCard HorizontalContentAlignment="Left" ContentAlignment="Left">
                             <StackPanel Margin="-12,0,0,0" Orientation="Vertical">

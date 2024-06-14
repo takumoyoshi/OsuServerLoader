@@ -1,1 +1,0 @@
-C:\Users\klonerovsky\VS projects\OsuServerLoader\OsuServerLoader\OsuServerLoader.csproj;x64

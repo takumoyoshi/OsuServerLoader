@@ -1,1 +1,1 @@
-C:\Users\klonerovsky\VS projects\OsuServerLoader\publish\OsuServerLoader_1.1.1.0_x64_Debug_Test\OsuServerLoader_1.1.1.0_x64_Debug.msix
+C:\Users\klonerovsky\VS projects\OsuServerLoader\publish\OsuServerLoader_1.1.2.0_x64_Debug_Test\OsuServerLoader_1.1.2.0_x64_Debug.msix
